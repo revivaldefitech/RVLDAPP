@@ -77,7 +77,7 @@ const FarmedStakingCard = () => {
         await harvestFarm(masterChefContract, farmWithBalance.pid)
         toastSuccess(
           `${t('Harvested')}!`,
-          t('Your %symbol% earnings have been sent to your wallet!', { symbol: 'CAKE' }),
+          t('Your %symbol% earnings have been sent to your wallet!', { symbol: 'VIV' }),
         )
       } catch (error) {
         toastError(t('Error'), t('Please try again. Confirm the transaction and make sure you are paying enough gas!'))
@@ -125,6 +125,7 @@ const FarmedStakingCard = () => {
               {pendingTx ? t('Collecting VIV') : t(`Harvest all %farm%`, { farm : numFarmsToCollect })}
             </Button>
             <Button 
+            style={{color:"#3952a8", background:"white"}}
             target="_blank"
             as='a' href="/swap">
               {t('Buy VIV token')}

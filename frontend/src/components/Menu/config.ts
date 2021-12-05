@@ -99,10 +99,6 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
     icon: 'MoreIcon',
     items: [
       {
-        label: 'GitHub',
-        href: 'https://github.com/rvlfinance',
-      },
-      {
         label: 'Doc',
         href: 'https://docs.revivaldefi.com',
       },

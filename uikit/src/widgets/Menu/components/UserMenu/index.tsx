@@ -10,7 +10,7 @@ import { UserMenuItem } from "./styles";
 
 const StyledUserMenu = styled(Flex)`
   align-items: center;
-  background-color: ${({ theme }) => theme.colors.tertiary};
+  background-color: #FFF;
   border-radius: 16px;
   box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.1);
   cursor: pointer;
@@ -26,7 +26,7 @@ const StyledUserMenu = styled(Flex)`
 `;
 
 const LabelText = styled.div`
-  color: ${({ theme }) => theme.colors.text};
+  color: ${({ theme }) => theme.colors.primary};
   display: none;
   font-weight: 600;
 
@@ -160,7 +160,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
       <StyledUserMenu ref={setTargetRef} {...props}>
         <MenuIcon avatarSrc={avatarSrc} variant={variant} />
         <LabelText title={text || account}>{text || accountEllipsis}</LabelText>
-        <ChevronDownIcon color="text" width="24px" />
+        <ChevronDownIcon color="primary" width="24px" />
       </StyledUserMenu>
       <Menu style={styles.popper} ref={setTooltipRef} {...attributes.popper} isOpen={isOpen}>
         {children}

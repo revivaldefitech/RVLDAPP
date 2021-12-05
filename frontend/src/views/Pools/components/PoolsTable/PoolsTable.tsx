@@ -54,7 +54,7 @@ const PoolsTable: React.FC<PoolsTableProps> = ({ pools, userDataLoaded, account 
           />
         ))}
         <ScrollButtonContainer>
-          <Button variant="text" style={{color:"white"}} onClick={scrollToTop}>
+          <Button variant="text" onClick={scrollToTop} style={{color:"white"}}>
             {t('To Top')}
             <ChevronUpIcon color="text" />
           </Button>

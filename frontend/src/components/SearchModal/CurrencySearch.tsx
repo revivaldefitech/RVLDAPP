@@ -1,4 +1,5 @@
 import React, { KeyboardEvent, RefObject, useCallback, useMemo, useRef, useState, useEffect } from 'react'
+import styled from 'styled-components'
 import { Currency, ETHER, Token } from '@pancakeswap/sdk'
 import { Text, Input, Box } from '@pancakeswap/uikit'
 import { useTranslation } from 'contexts/Localization'
@@ -16,6 +17,12 @@ import { filterTokens, useSortedTokensByQuery } from './filtering'
 import useTokenComparator from './sorting'
 
 import ImportRow from './ImportRow'
+
+const StyledInput = styled(Input)`
+  &::placeholder {
+    color: #3952a8;
+  }
+`
 
 interface CurrencySearchProps {
   selectedCurrency?: Currency | null
@@ -124,7 +131,7 @@ function CurrencySearch({
       <div>
         <AutoColumn gap="16px">
           <Row>
-            <Input
+            <StyledInput
               id="token-search-input"
               placeholder={t('Search name or paste address')}
               scale="lg"

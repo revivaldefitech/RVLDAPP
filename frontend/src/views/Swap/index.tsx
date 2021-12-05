@@ -378,7 +378,7 @@ export default function Swap({ history }: RouteComponentProps) {
                 {allowedSlippage !== INITIAL_ALLOWED_SLIPPAGE && (
                   <RowBetween align="center">
                     <Label>{t('Slippage Tolerance')}</Label>
-                    <Text bold color="primary">
+                    <Text bold color="white">
                       {allowedSlippage / 100}%
                     </Text>
                   </RowBetween>
@@ -400,11 +400,11 @@ export default function Swap({ history }: RouteComponentProps) {
               </Button>
             ) : noRoute && userHasSpecifiedInputOutput ? (
               <GreyCard style={{ textAlign: 'center' }}>
-                <Text color="textSubtle" mb="4px">
+                <Text color="primary" mb="4px">
                   {t('Insufficient liquidity for this trade.')}
                 </Text>
                 {singleHopOnly && (
-                  <Text color="textSubtle" mb="4px">
+                  <Text color="primary" mb="4px">
                     {t('Try enabling multi-hop trades.')}
                   </Text>
                 )}
