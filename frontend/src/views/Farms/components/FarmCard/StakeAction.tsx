@@ -129,7 +129,7 @@ const StakeAction: React.FC<FarmCardActionsProps> = ({
   return (
     <Flex justifyContent="space-between" alignItems="center">
       <Flex flexDirection="column" alignItems="flex-start">
-        <Heading color={stakedBalance.eq(0) ? 'textDisabled' : 'text'}>{displayBalance()}</Heading>
+        <Heading color={stakedBalance.eq(0) ? 'text' : 'text'}>{displayBalance()}</Heading>
         {stakedBalance.gt(0) && lpPrice.gt(0) && (
           <Balance
             fontSize="12px"

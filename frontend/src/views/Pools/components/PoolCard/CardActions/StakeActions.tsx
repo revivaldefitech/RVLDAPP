@@ -88,7 +88,7 @@ const StakeAction: React.FC<StakeActionsProps> = ({
           {reachStakingLimit ? (
             <span ref={targetRef}>
               <IconButton variant="secondary" disabled>
-                <AddIcon color="textDisabled" width="24px" height="24px" />
+                <AddIcon color="text" width="24px" height="24px" />
               </IconButton>
             </span>
           ) : (

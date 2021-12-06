@@ -10,7 +10,7 @@ const CakeWalletBalance = ({ xhashBalance }) => {
   const { account } = useWeb3React()
   if (!account) {
     return (
-      <Text color="textDisabled" style={{ lineHeight: '36px' }}>
+      <Text style={{ lineHeight: '36px' }}>
         {t('Locked')}
       </Text>
     )

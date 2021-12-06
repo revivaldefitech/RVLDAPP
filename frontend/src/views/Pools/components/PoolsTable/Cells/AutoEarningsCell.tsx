@@ -78,7 +78,7 @@ const AutoEarningsCell: React.FC<AutoEarningsCellProps> = ({ pool, account, user
                   mt="4px"
                   bold={!isMobile}
                   fontSize={isMobile ? '14px' : '16px'}
-                  color={hasEarnings ? 'primary' : 'textDisabled'}
+                  color={hasEarnings ? 'primary' : 'text'}
                   decimals={hasEarnings ? 5 : 1}
                   value={hasEarnings ? earningTokenBalance : 0}
                 />
@@ -97,7 +97,7 @@ const AutoEarningsCell: React.FC<AutoEarningsCellProps> = ({ pool, account, user
                     )}
                   </>
                 ) : (
-                  <Text mt="4px" fontSize="12px" color="textDisabled">
+                  <Text mt="4px" fontSize="12px" color="text">
                     0 USD
                   </Text>
                 )}

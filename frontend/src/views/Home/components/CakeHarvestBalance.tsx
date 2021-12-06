@@ -11,7 +11,7 @@ const CakeHarvestBalance = ({earningsSum}) => {
 
   if (!account) {
     return (
-      <Text color="textDisabled" style={{ lineHeight: '60px' }}>
+      <Text style={{ lineHeight: '60px' }}>
         {t('Locked')}
       </Text>
     )

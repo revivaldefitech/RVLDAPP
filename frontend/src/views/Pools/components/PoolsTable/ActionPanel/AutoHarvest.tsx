@@ -91,8 +91,8 @@ const AutoHarvestAction: React.FunctionComponent<AutoHarvestActionProps> = ({ us
               </>
             ) : (
               <>
-                <Heading color="textDisabled">0</Heading>
-                <Text fontSize="12px" color="textDisabled">
+                <Heading color="text">0</Heading>
+                <Text fontSize="12px" color="text">
                   0 USD
                 </Text>
               </>

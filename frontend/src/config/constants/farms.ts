@@ -73,6 +73,17 @@ const farms: FarmConfig[] = [
     token: tokens.rvl,
     quoteToken: tokens.usdt,
   },
+  {
+    pid: 7,
+    lpSymbol: 'RVL-VIV LP',
+    lpAddresses: {
+      97: '',
+      56: '0x83acf5d1e7542e6bb2755bd64035789611f39217',
+    },
+    token: tokens.rvl,
+    quoteToken: tokens.viv,
+  },
+
 ]
 
 export default farms

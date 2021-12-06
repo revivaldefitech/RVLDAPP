@@ -8,7 +8,7 @@ export const StyledCard = styled(Card)<{ isFinished?: boolean }>`
   flex-direction: column;
   align-self: baseline;
   position: relative;
-  color: ${({ isFinished, theme }) => theme.colors[isFinished ? 'textDisabled' : 'secondary']};
+  color: ${({ isFinished, theme }) => theme.colors[isFinished ? 'text' : 'secondary']};
 
   ${({ theme }) => theme.mediaQueries.sm} {
     margin: 0 12px 46px;
