@@ -47,7 +47,7 @@ const pools: PoolConfig[] = [
     earningToken: tokens.viv,
     contractAddress: {
       97: '',
-      56: '0xec80438C2bC1D672ac87860C767998E15f9182F0',
+      56: '0x8a0d7c12bF06e1d8f101a47cb014Ca56FAa48ebF',
     },
     poolCategory: PoolCategory.CORE,
     harvest: true,
