@@ -98,7 +98,7 @@ const FarmedStakingCard = () => {
           <Button 
             variant="text"
             style={{height: 32, marginTop: 20, marginLeft: 16, backgroundColor: '#d9d7f2'}}
-            onClick={() => registerToken('0xb30B27aDb3B0A45e88385eB2BB144Fad9120A420', 'VIV', 18)}>
+            onClick={() => registerToken('0x4666e77fa1a7f6749e48b533ef500587b094f61c', 'VIV', 18)}>
             +
             <img src='/images/metamask.png' alt='MetaMask Logo' style={{width: 16, height: 16, marginLeft: 4}}/>
           </Button>
