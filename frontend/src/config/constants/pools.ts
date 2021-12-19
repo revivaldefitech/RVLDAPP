@@ -2,21 +2,8 @@ import tokens from './tokens'
 import { PoolConfig, PoolCategory } from './types'
 
 const pools: PoolConfig[] = [
-  // {
-  //   sousId: 0,
-  //   stakingToken: tokens.viv,
-  //   earningToken: tokens.viv,
-  //   contractAddress: {
-  //     97: '',
-  //     56: '0x249535B7a46c25A413bC27f18df0E5a789fD21B5',
-  //   },
-  //   poolCategory: PoolCategory.CORE,
-  //   harvest: true,
-  //   tokenPerBlock: '15',
-  //   sortOrder: 1,
-  // },
   {
-    sousId: 1,
+    sousId: 400,
     stakingToken: tokens.viv,
     earningToken: tokens.viv,
     contractAddress: {
@@ -25,11 +12,11 @@ const pools: PoolConfig[] = [
     },
     poolCategory: PoolCategory.CORE,
     harvest: true,
-    tokenPerBlock: '0.0003',
+    tokenPerBlock: '0.1875',
     sortOrder: 999,
   },
   {
-    sousId: 2,
+    sousId: 401,
     stakingToken: tokens.rvl,
     earningToken: tokens.rvl,
     contractAddress: {
@@ -42,7 +29,7 @@ const pools: PoolConfig[] = [
     sortOrder: 999,
   },
   {
-    sousId: 3,
+    sousId: 402,
     stakingToken: tokens.rvl,
     earningToken: tokens.viv,
     contractAddress: {
@@ -51,11 +38,11 @@ const pools: PoolConfig[] = [
     },
     poolCategory: PoolCategory.CORE,
     harvest: true,
-    tokenPerBlock: '.1875
+    tokenPerBlock: '0.1875
     sortOrder: 999,
   },
   {
-    sousId: 4,
+    sousId: 403,
     stakingToken: tokens.viv,
     earningToken: tokens.rvl,
     contractAddress: {
