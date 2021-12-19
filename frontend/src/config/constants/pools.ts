@@ -25,7 +25,7 @@ const pools: PoolConfig[] = [
     },
     poolCategory: PoolCategory.CORE,
     harvest: true,
-    tokenPerBlock: '15',
+    tokenPerBlock: '0.0003',
     sortOrder: 999,
   },
   {
@@ -34,11 +34,11 @@ const pools: PoolConfig[] = [
     earningToken: tokens.rvl,
     contractAddress: {
       97: '',
-      56: '0xA19c80352ce67063a7ab697A71255778267d4e17',
+      56: '0x5fe395675d254e47cacf561f7ea6b6c1c93badab',
     },
     poolCategory: PoolCategory.CORE,
     harvest: true,
-    tokenPerBlock: '15',
+    tokenPerBlock: '575000',
     sortOrder: 999,
   },
   {
@@ -47,11 +47,11 @@ const pools: PoolConfig[] = [
     earningToken: tokens.viv,
     contractAddress: {
       97: '',
-      56: '0x8a0d7c12bF06e1d8f101a47cb014Ca56FAa48ebF',
+      56: '0x0F6C6C2A6ca70f8445F73Ae5C5C368b264A5a403',
     },
     poolCategory: PoolCategory.CORE,
     harvest: true,
-    tokenPerBlock: '15',
+    tokenPerBlock: '.1875
     sortOrder: 999,
   },
   {
@@ -60,11 +60,11 @@ const pools: PoolConfig[] = [
     earningToken: tokens.rvl,
     contractAddress: {
       97: '',
-      56: '0xDAE6C179594cbb7680a591fe3831670AE7131BFc',
+      56: '0x0F61AA7FD28BBFEE79Ae6A34468e4da001B8f472',
     },
     poolCategory: PoolCategory.CORE,
     harvest: true,
-    tokenPerBlock: '15',
+    tokenPerBlock: '575000',
     sortOrder: 999,
   },
 ]
