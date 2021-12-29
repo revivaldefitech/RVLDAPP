@@ -62,4 +62,8 @@
   "publishConfig": {
     "access": "public"
   }
+  "scripts": {
+    ...
+    "rimraf": "./node_modules/rimraf/bin.js",
+}
 }
