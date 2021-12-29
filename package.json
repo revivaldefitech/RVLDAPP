@@ -12,7 +12,7 @@
   "license": "MIT",
   "scripts": {
     "start": "yarn storybook",
-    "rimraf": "./node_modules/rimraf/bin.js"
+    "rimraf": "./node_modules/rimraf/bin.js",
     "build": "rimraf ./dist && rollup -c && tsc -d --emitDeclarationOnly --declarationDir dist",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
     "format:check": "prettier --check --loglevel error 'src/**/*.{js,jsx,ts,tsx}'",
