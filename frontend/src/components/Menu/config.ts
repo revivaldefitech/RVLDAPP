@@ -95,6 +95,25 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
     ],
   },
   {
+    label: t('Audits'),
+    icon: 'NftIcon',
+    items: [
+      {
+        label: 'VIV Certik',
+        href: 'https://www.certik.com/projects/vival',
+      },
+      {
+        label: 'RVL Certik',
+        href: 'https://www.certik.com/projects/revival',
+      },
+      {
+        label: 'RVL DessertFinance',
+        href: 'https://dessertswap.finance/audits/Revival%20BSC%20Audit%2011371955.pdf',
+      },
+
+    ],
+  },
+  {
     label: t('More'),
     icon: 'MoreIcon',
     items: [
