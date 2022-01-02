@@ -146,7 +146,7 @@ export const socials = [
     // items: [
     //   {
     //     label: "English",
-        href: "https://t.me/xmineofficial",
+        href: "https://t.me/revivaldefi",
     //   },
     //   {
     //     label: "中文",
@@ -169,22 +169,22 @@ export const socials = [
   {
     label: "Discord",
     icon: "DiscordIcon",
-    href: "https://twitter.com/xmineofficial",
+    href: "https://twitter.com/revivaldefi",
   },
   {
     label: "Instagram",
     icon: "InstagramIcon",
-    href: "https://twitter.com/xmineofficial",
+    href: "https://twitter.com/revivaldefi",
   },
   {
     label: "Twitter",
     icon: "TwitterIcon",
-    href: "https://twitter.com/xmineofficial",
+    href: "https://twitter.com/revivaldefi",
   },
   {
     label: "Reddit",
     icon: "RedditIcon",
-    href: "https://twitter.com/xmineofficial",
+    href: "https://twitter.com/revivaldefi",
   },
 ];
 
