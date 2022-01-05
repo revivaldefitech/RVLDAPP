@@ -29,7 +29,15 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
   {
     label: t('Pools'),
     icon: 'PoolIcon',
-    href: '/pools',
+    items: [
+      {
+        label: ' Pools',
+        href: '/Pools',
+      },
+      {
+        label: ' Pools Calculator',
+        href: 'https://www.revivalcalc.xyz/',
+      },      
   },
   // {
   //   label: t('Referral'),
@@ -118,7 +126,7 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
     icon: 'MoreIcon',
     items: [
       {
-        label: 'Doc',
+        label: 'Revival GitBook',
         href: 'https://docs.revivaldefi.com',
       },
     ],
