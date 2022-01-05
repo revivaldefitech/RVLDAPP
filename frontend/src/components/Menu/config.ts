@@ -37,7 +37,8 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
       {
         label: ' Pools Calculator',
         href: 'https://www.revivalcalc.xyz/',
-      },      
+      }, 
+      ],
   },
   // {
   //   label: t('Referral'),
