@@ -130,6 +130,30 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
         label: 'Revival GitBook',
         href: 'https://docs.revivaldefi.com',
       },
+      {
+        label: 'CoinMarketCap RVL',
+        href: 'https://coinmarketcap.com/currencies/revival/',
+      },
+      {
+        label: 'CoinMarketCap VIV',
+        href: 'https://coinmarketcap.com/currencies/vival/',
+      },
+      {
+        label: 'CoinGecko RVL',
+        href: 'https://www.coingecko.com/en/coins/revival',
+      },
+      {
+        label: 'CoinGecko VIV',
+        href: 'https://www.coingecko.com/en/coins/vival',
+      },
+      {
+        label: 'WorldCoinIndex RVL',
+        href: 'https://www.worldcoinindex.com/coin/revival',
+      },
+      {
+        label: 'WorldCoinIndex VIV',
+        href: 'https://www.worldcoinindex.com/coin/vival',
+      },
     ],
   }
 ]
