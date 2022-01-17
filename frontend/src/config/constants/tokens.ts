@@ -117,6 +117,15 @@ const tokens = {
     decimals: 18,
     projectLink: 'https://revivaldefi.com/'
   },
+  xUSD: {
+    symbol: 'xUSD',
+    address: {
+      56: '0x254246331cacbc0b2ea12bef6632e4c6075f60e2',
+      97: '',
+    },
+    decimals: 18,
+    projectLink: 'https://xsurge.net/#/'
+  },
   rvl: {
     symbol: 'RVL',
     address: {
