@@ -54,7 +54,7 @@ const pools: PoolConfig[] = [
     tokenPerBlock: '575000',
     sortOrder: 999,
   },
-    {
+  {
     sousId: 404,
     stakingToken: tokens.rvl,
     earningToken: tokens.xUSD,
@@ -64,7 +64,7 @@ const pools: PoolConfig[] = [
     },
     poolCategory: PoolCategory.CORE,
     harvest: true,
-    tokenPerBlock: '0.10700000000000000',
+    tokenPerBlock: '0.1070',
     sortOrder: 999,
   },
 ]
