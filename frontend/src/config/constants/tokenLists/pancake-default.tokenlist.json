@@ -37,10 +37,10 @@
     {
       "name": "xUSD",
       "symbol": "xUSD",
-      "address": "0x254246331cacbc0b2ea12bef6632e4c6075f60e2",
+      "address": "0x254246331cacbC0b2ea12bEF6632E4C6075f60e2",
       "chainId": 56,
       "decimals": 18,
-      "logoURI": "https://revivaldefi.com/assets/imgs/xusd.png"
+      "logoURI": "https://rvl.finance/images/tokens/0x254246331cacbC0b2ea12bEF6632E4C6075f60e2.png"
     },
     {
       "name": "BUSD Token",
