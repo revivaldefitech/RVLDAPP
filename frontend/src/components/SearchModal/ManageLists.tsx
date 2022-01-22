@@ -101,14 +101,14 @@ const ListRow = memo(function ListRow({ listUrl }: { listUrl: string }) {
       )}
       <Column style={{ flex: '1' }}>
         <Row>
-          <Text bold>{list.name}</Text>
+          <Text bold color="textSubtle">{list.name}</Text>
         </Row>
         <RowFixed mt="4px">
-          <Text fontSize="12px" mr="6px" textTransform="lowercase">
+          <Text fontSize="12px" mr="6px" color="textSubtle" textTransform="lowercase">
             {list.tokens.length} {t('Tokens')}
           </Text>
           <span ref={targetRef}>
-            <CogIcon color="text" width="12px" />
+            <CogIcon color="textSubtle" width="12px" />
           </span>
         </RowFixed>
       </Column>
@@ -131,7 +131,11 @@ const ListContainer = styled.div`
   height: 100%;
   overflow: auto;
 `
-
+const StyledInput = styled(Input)`
+  &::placeholder {
+    color: #0D0D2B;
+  }
+`
 function ManageLists({
   setModalView,
   setImportList,
@@ -239,7 +243,7 @@ function ManageLists({
     <Wrapper>
       <AutoColumn gap="14px">
         <Row>
-          <Input
+          <StyledInput
             id="list-add-input"
             scale="lg"
             placeholder={t('https:// or ipfs:// or ENS name')}

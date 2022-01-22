@@ -117,7 +117,7 @@ const tokens = {
     decimals: 18,
     projectLink: 'https://revivaldefi.com/'
   },
-  xUSD: {
+  xusd: {
     symbol: 'xUSD',
     address: {
       56: '0x254246331cacbC0b2ea12bEF6632E4C6075f60e2',

@@ -53,7 +53,7 @@ const HarvestAction: React.FunctionComponent<HarvestActionProps> = ({
       <Text fontSize="12px" bold color="secondary" as="span" textTransform="uppercase">
         {earningToken.symbol}{' '}
       </Text>
-      <Text fontSize="12px" bold color="textSubtle" as="span" textTransform="uppercase">
+      <Text fontSize="12px" bold as="span" textTransform="uppercase">
         {t('Earned')}
       </Text>
     </>
@@ -95,7 +95,7 @@ const HarvestAction: React.FunctionComponent<HarvestActionProps> = ({
                   <Balance
                     display="inline"
                     fontSize="12px"
-                    color="textSubtle"
+                    color="text"
                     decimals={2}
                     prefix="~"
                     value={earningTokenDollarBalance}
@@ -113,7 +113,7 @@ const HarvestAction: React.FunctionComponent<HarvestActionProps> = ({
             )}
           </>
         </Flex>
-        <Button disabled={!hasEarnings} onClick={onPresentCollect}>
+        <Button variant="subtle" disabled={!hasEarnings} onClick={onPresentCollect}>
           {isCompoundPool ? t('Collect') : t('Harvest')}
         </Button>
       </ActionContent>

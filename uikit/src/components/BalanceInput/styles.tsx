@@ -34,7 +34,7 @@ export const StyledInput = styled(Input)`
   border: none;
 
   ::placeholder {
-    color: ${({ theme }) => theme.colors.textSubtle};
+    color: #616164;
   }
 
   &:focus:not(:disabled) {

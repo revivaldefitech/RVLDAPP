@@ -18,6 +18,7 @@ const TxnIcon = styled(Flex)`
 const Summary = styled.div`
   flex: 1;
   padding: 0 8px;
+  color: #fff;
 `
 
 const TxnLink = styled(Link)`

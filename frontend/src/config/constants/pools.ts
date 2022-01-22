@@ -57,7 +57,7 @@ const pools: PoolConfig[] = [
   {
     sousId: 404,
     stakingToken: tokens.rvl,
-    earningToken: tokens.xUSD,
+    earningToken: tokens.xusd,
     contractAddress: {
       97: '',
       56: '0x0c95ff0278a622387277779fb2de09e1db5d46ea',

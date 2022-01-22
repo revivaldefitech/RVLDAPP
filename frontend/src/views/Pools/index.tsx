@@ -309,7 +309,8 @@ const Pools: React.FC = () => {
             <Loading />
           </Flex>
         )}
-        {viewMode === ViewMode.CARD ? cardLayout : tableLayout}
+        {/* {viewMode === ViewMode.CARD ? cardLayout : tableLayout} */}
+        {tableLayout}
         <div ref={loadMoreRef} />
       </Page>
     </>

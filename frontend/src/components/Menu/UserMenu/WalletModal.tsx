@@ -60,7 +60,7 @@ const WalletModal: React.FC<WalletModalProps> = ({ initialView = WalletView.WALL
         </IconButton>
       </ModalHeader>
       <Tabs>
-        <ButtonMenu scale="sm" variant="subtle" onItemClick={handleClick} activeIndex={view} fullWidth>
+        <ButtonMenu scale="sm" onItemClick={handleClick} activeIndex={view} fullWidth>
           <ButtonMenuItem>{t('Wallet')}</ButtonMenuItem>
           <ButtonMenuItem>{t('Transactions')}</ButtonMenuItem>
         </ButtonMenu>

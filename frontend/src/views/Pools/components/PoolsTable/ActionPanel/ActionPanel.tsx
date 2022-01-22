@@ -60,7 +60,7 @@ const StyledActionPanel = styled.div<{ expanded: boolean }>`
           ${collapseAnimation} 300ms linear forwards
         `};
   overflow: hidden;
-  background: ${({ theme }) => theme.colors.dropdown};
+  background: ${({ theme }) => theme.colors.cardBorder};
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;
@@ -200,11 +200,11 @@ const ActionPanel: React.FC<ActionPanelProps> = ({ account, pool, userDataLoaded
         <Text>{hasPoolStarted ? t('Ends in') : t('Starts in')}:</Text>
         <Flex>
           <Link external href={getBscScanLink(hasPoolStarted ? endBlock : startBlock, 'countdown')}>
-            <Balance fontSize="16px" value={blocksToDisplay} decimals={0} color="primary" />
-            <Text ml="4px" color="primary" textTransform="lowercase">
+            <Balance fontSize="16px" value={blocksToDisplay} decimals={0} color="text" />
+            <Text ml="4px" color="text" textTransform="lowercase">
               {t('Blocks')}
             </Text>
-            <TimerIcon ml="4px" color="primary" />
+            <TimerIcon ml="4px" color="text" />
           </Link>
         </Flex>
       </Flex>
@@ -232,7 +232,7 @@ const ActionPanel: React.FC<ActionPanelProps> = ({ account, pool, userDataLoaded
           <>
             <Balance fontSize="16px" value={getTotalStakedBalance()} decimals={0} unit={` ${stakingToken.symbol}`} />
             <span ref={totalStakedTargetRef}>
-              <HelpIcon color="textSubtle" width="20px" ml="4px" />
+              <HelpIcon color="text" width="20px" ml="4px" />
             </span>
           </>
         ) : (
@@ -278,7 +278,7 @@ const ActionPanel: React.FC<ActionPanelProps> = ({ account, pool, userDataLoaded
               height="auto"
               onClick={() => registerToken(tokenAddress, earningToken.symbol, earningToken.decimals)}
             >
-              <Text color="primary">{t('Add to Metamask')}</Text>
+              <Text>{t('Add to Metamask')}</Text>
               <MetamaskIcon ml="4px" />
             </Button>
           </Flex>

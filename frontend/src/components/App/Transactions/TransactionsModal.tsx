@@ -51,7 +51,7 @@ const TransactionsModal: React.FC<InjectedModalProps> = ({ onDismiss }) => {
           {!!pending.length || !!confirmed.length ? (
             <>
               <AutoRow mb="1rem" style={{ justifyContent: 'space-between' }}>
-                <Text>{t('Recent Transactions')}</Text>
+                <Text color="textSubtle">{t('Recent Transactions')}</Text>
                 <Button variant="tertiary" scale="xs" onClick={clearAllTransactionsCallback}>
                   {t('clear all')}
                 </Button>
@@ -60,7 +60,7 @@ const TransactionsModal: React.FC<InjectedModalProps> = ({ onDismiss }) => {
               {renderTransactions(confirmed)}
             </>
           ) : (
-            <Text>{t('No recent transactions')}</Text>
+            <Text color="textSubtle">{t('No recent transactions')}</Text>
           )}
         </ModalBody>
       )}

@@ -27,6 +27,7 @@ const StyledBalanceText = styled(Text)`
   overflow: hidden;
   max-width: 5rem;
   text-overflow: ellipsis;
+  color: #fff;
 `
 
 const FixedContentRow = styled.div`
@@ -86,7 +87,7 @@ function CurrencyRow({
     >
       <CurrencyLogo currency={currency} size="24px" />
       <Column>
-        <Text bold>{currency.symbol}</Text>
+        <Text bold color="textSubtle">{currency.symbol}</Text>
         <Text color="textSubtle" small ellipsis maxWidth="200px">
           {!isOnSelectedList && customAdded && 'Added by user •'} {currency.name}
         </Text>

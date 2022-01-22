@@ -25,7 +25,7 @@ const WalletTransactions: React.FC = () => {
   return (
     <Box minHeight="120px">
       <Flex alignItems="center" justifyContent="space-between" mb="24px">
-        <Text color="secondary" fontSize="12px" textTransform="uppercase" fontWeight="bold">
+        <Text color="textSubtle" fontSize="12px" textTransform="uppercase" fontWeight="bold">
           {t('Recent Transactions')}
         </Text>
         {sortedTransactions.length > 0 && (
@@ -37,7 +37,7 @@ const WalletTransactions: React.FC = () => {
       {sortedTransactions.length > 0 ? (
         sortedTransactions.map((txn) => <TransactionRow key={txn.hash} txn={txn} />)
       ) : (
-        <Text textAlign="center">{t('No recent transactions')}</Text>
+        <Text textAlign="center" color="textSubtle">{t('No recent transactions')}</Text>
       )}
     </Box>
   )

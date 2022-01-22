@@ -7,9 +7,9 @@ import { useTranslation } from 'contexts/Localization'
 const StyledInput = styled(Input)`
   border-radius: 16px;
   margin-left: auto;
-  color: #3952a8;
+  color: #0D0D2B;
   &::placeholder {
-    color: #586cb1;
+    color: #282840;
   }
 `
 

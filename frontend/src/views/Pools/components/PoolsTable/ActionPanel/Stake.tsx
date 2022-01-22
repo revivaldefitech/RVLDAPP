@@ -135,7 +135,7 @@ const Staked: React.FunctionComponent<StackedActionProps> = ({ pool, userDataLoa
     return (
       <ActionContainer>
         <ActionTitles>
-          <Text fontSize="12px" bold color="textSubtle" as="span" textTransform="uppercase">
+          <Text fontSize="12px" bold color="text" as="span" textTransform="uppercase">
             {t('Start staking')}
           </Text>
         </ActionTitles>
@@ -150,7 +150,7 @@ const Staked: React.FunctionComponent<StackedActionProps> = ({ pool, userDataLoa
     return (
       <ActionContainer>
         <ActionTitles>
-          <Text fontSize="12px" bold color="textSubtle" as="span" textTransform="uppercase">
+          <Text fontSize="12px" bold color="text" as="span" textTransform="uppercase">
             {t('Start staking')}
           </Text>
         </ActionTitles>
@@ -165,12 +165,12 @@ const Staked: React.FunctionComponent<StackedActionProps> = ({ pool, userDataLoa
     return (
       <ActionContainer>
         <ActionTitles>
-          <Text fontSize="12px" bold color="textSubtle" as="span" textTransform="uppercase">
+          <Text fontSize="12px" bold color="text" as="span" textTransform="uppercase">
             {t('Enable pool')}
           </Text>
         </ActionTitles>
         <ActionContent>
-          <Button width="100%" disabled={requestedApproval} onClick={handleApprove} variant="secondary">
+          <Button width="100%" disabled={requestedApproval} onClick={handleApprove} variant="subtle" style={{color:'#000'}}>
             {t('Enable')}
           </Button>
         </ActionContent>
@@ -186,7 +186,7 @@ const Staked: React.FunctionComponent<StackedActionProps> = ({ pool, userDataLoa
           <Text fontSize="12px" bold color="secondary" as="span" textTransform="uppercase">
             {stakingToken.symbol}{' '}
           </Text>
-          <Text fontSize="12px" bold color="textSubtle" as="span" textTransform="uppercase">
+          <Text fontSize="12px" bold color="text" as="span" textTransform="uppercase">
             {isAutoVault ? t('Staked (compounding)') : t('Staked')}
           </Text>
         </ActionTitles>
@@ -202,7 +202,7 @@ const Staked: React.FunctionComponent<StackedActionProps> = ({ pool, userDataLoa
             <Balance
               fontSize="12px"
               display="inline"
-              color="textSubtle"
+              color="text"
               decimals={2}
               value={isAutoVault ? stakedAutoDollarValue : stakedTokenDollarBalance}
               unit=" USD"
@@ -210,22 +210,22 @@ const Staked: React.FunctionComponent<StackedActionProps> = ({ pool, userDataLoa
             />
           </Flex>
           <IconButtonWrapper>
-            <IconButton variant="secondary" onClick={onUnstake} mr="6px">
-              <MinusIcon color="primary" width="14px" />
+            <IconButton variant="subtle" onClick={onUnstake} mr="6px">
+              <MinusIcon color="text" width="14px" />
             </IconButton>
             {reachStakingLimit ? (
               <span ref={targetRef}>
-                <IconButton variant="secondary" disabled>
+                <IconButton variant="subtle" disabled>
                   <AddIcon color="text" width="24px" height="24px" />
                 </IconButton>
               </span>
             ) : (
               <IconButton
-                variant="secondary"
+                variant="subtle"
                 onClick={stakingTokenBalance.gt(0) ? onStake : onPresentTokenRequired}
                 disabled={isFinished}
               >
-                <AddIcon color="primary" width="14px" />
+                <AddIcon color="text" width="14px" />
               </IconButton>
             )}
           </IconButtonWrapper>
@@ -241,7 +241,7 @@ const Staked: React.FunctionComponent<StackedActionProps> = ({ pool, userDataLoa
         <Text fontSize="12px" bold color="secondary" as="span" textTransform="uppercase">
           {t('Stake')}{' '}
         </Text>
-        <Text fontSize="12px" bold color="textSubtle" as="span" textTransform="uppercase">
+        <Text fontSize="12px" bold color="text" as="span" textTransform="uppercase">
           {stakingToken.symbol}
         </Text>
       </ActionTitles>

@@ -30,6 +30,12 @@ const Footer = styled.div`
   align-items: center;
 `
 
+const StyledInput = styled(Input)`
+  &::placeholder {
+    color: #0D0D2B;
+  }
+`
+
 export default function ManageTokens({
   setModalView,
   setImportToken,
@@ -95,7 +101,7 @@ export default function ManageTokens({
       <Column style={{ width: '100%', flex: '1 1' }}>
         <AutoColumn gap="14px">
           <Row>
-            <Input
+            <StyledInput
               id="token-search-input"
               scale="lg"
               placeholder="0x0000"

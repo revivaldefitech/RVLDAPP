@@ -42,16 +42,16 @@ const WalletInfo: React.FC<WalletInfoProps> = ({ hasLowBnbBalance, onDismiss }) 
       )}
       <Flex alignItems="center" justifyContent="space-between">
         <Text color="textSubtle">{t('BNB Balance')}</Text>
-        <Text>{getFullDisplayBalance(balance, 18, 6)}</Text>
+        <Text color="textSubtle">{getFullDisplayBalance(balance, 18, 6)}</Text>
       </Flex>
       <Flex alignItems="center" justifyContent="space-between" mb="24px">
         <Text color="textSubtle">{t('VIV Balance')}</Text>
-        <Text>{getFullDisplayBalance(cakeBalance, 18, 3)}</Text>
+        <Text color="textSubtle">{getFullDisplayBalance(cakeBalance, 18, 3)}</Text>
       </Flex>
       <Flex alignItems="center" justifyContent="end" mb="24px">
-        <LinkExternal href={getBscScanLink(account, 'address')}>{t('View on BscScan')}</LinkExternal>
+        <LinkExternal style={{color:'#fff'}} href={getBscScanLink(account, 'address')}>{t('View on BscScan')}</LinkExternal>
       </Flex>
-      <Button variant="secondary" width="100%" onClick={handleLogout}>
+      <Button variant="subtle" width="100%" onClick={handleLogout}>
         {t('Disconnect Wallet')}
       </Button>
     </>

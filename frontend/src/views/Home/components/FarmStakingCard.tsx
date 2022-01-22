@@ -125,7 +125,7 @@ const FarmedStakingCard = () => {
               {pendingTx ? t('Collecting VIV') : t(`Harvest all %farm%`, { farm : numFarmsToCollect })}
             </Button>
             <Button 
-            style={{color:"#3952a8", background:"white"}}
+            style={{color:"#0D0D2B", background:"white"}}
             target="_blank"
             as='a' href="/swap">
               {t('Buy VIV token')}

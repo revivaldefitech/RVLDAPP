@@ -115,9 +115,9 @@ const CollectModal: React.FC<CollectModalProps> = ({
       )}
 
       <Flex justifyContent="space-between" alignItems="center" mb="24px">
-        <Text>{shouldCompound ? t('Compounding') : t('Harvesting')}:</Text>
+        <Text color="textSubtle">{shouldCompound ? t('Compounding') : t('Harvesting')}:</Text>
         <Flex flexDirection="column">
-          <Heading>
+          <Heading color="textSubtle">
             {formattedBalance} {earningToken.symbol}
           </Heading>
           {earningsDollarValue > 0 && (
@@ -134,7 +134,7 @@ const CollectModal: React.FC<CollectModalProps> = ({
       >
         {pendingTx ? t('Confirming') : t('Confirm')}
       </Button>
-      <Button variant="text" onClick={onDismiss} pb="0px">
+      <Button variant="text" style={{color:'#fff'}} onClick={onDismiss} pb="0px">
         {t('Close Window')}
       </Button>
     </Modal>

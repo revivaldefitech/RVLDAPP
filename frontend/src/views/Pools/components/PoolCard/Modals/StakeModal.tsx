@@ -49,6 +49,7 @@ const AnnualRoiDisplay = styled(Text)`
   overflow: hidden;
   text-align: right;
   text-overflow: ellipsis;
+  color: #eee;
 `
 
 const StakeModal: React.FC<StakeModalProps> = ({
@@ -182,7 +183,7 @@ const StakeModal: React.FC<StakeModalProps> = ({
       headerBackground={theme.colors.gradients.cardHeader}
     >
       {stakingLimit.gt(0) && !isRemovingStake && (
-        <Text color="secondary" bold mb="24px" style={{ textAlign: 'center' }} fontSize="16px">
+        <Text color="textSubtle" bold mb="24px" style={{ textAlign: 'center' }} fontSize="16px">
           {t('Max stake for this pool: %amount% %token%', {
             amount: getFullDisplayBalance(stakingLimit, stakingToken.decimals, 0),
             token: stakingToken.symbol,
@@ -190,7 +191,7 @@ const StakeModal: React.FC<StakeModalProps> = ({
         </Text>
       )}
       <Flex alignItems="center" justifyContent="space-between" mb="8px">
-        <Text bold>{isRemovingStake ? t('Unstake') : t('Stake')}:</Text>
+        <Text bold color="textSubtle">{isRemovingStake ? t('Unstake') : t('Stake')}:</Text>
         <Flex alignItems="center" minWidth="70px">
           <Image
             src={`/images/tokens/${getAddress(stakingToken.address)}.png`}
@@ -198,7 +199,7 @@ const StakeModal: React.FC<StakeModalProps> = ({
             height={24}
             alt={stakingToken.symbol}
           />
-          <Text ml="4px" bold>
+          <Text ml="4px" bold color="textSubtle">
             {stakingToken.symbol}
           </Text>
         </Flex>
@@ -262,7 +263,7 @@ const StakeModal: React.FC<StakeModalProps> = ({
       </Button>
       {!isRemovingStake && (
         <StyledLink external href={getTokenLink}>
-          <Button width="100%" mt="8px" variant="secondary">
+          <Button width="100%" mt="8px" variant="subtle">
             {t('Get %symbol%', { symbol: stakingToken.symbol })}
           </Button>
         </StyledLink>

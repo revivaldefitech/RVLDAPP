@@ -49,6 +49,13 @@ const Label = styled(Text)`
   color: ${({ theme }) => theme.colors.secondary};
 `
 
+const StyledAppBody = styled(AppBody)`
+  background: #161044;
+  & > div {
+    background: #161044;
+  }
+`
+
 export default function Swap({ history }: RouteComponentProps) {
   const loadedUrlParams = useDefaultsFromURLSearch()
 
@@ -304,7 +311,7 @@ export default function Swap({ history }: RouteComponentProps) {
 
   return (
     <Page>
-      <AppBody>
+      <StyledAppBody>
         <AppHeader title={t('Exchange')} subtitle={t('Trade tokens in an instant')} />
         <Wrapper id="swap-page">
           <AutoColumn gap="md">
@@ -494,7 +501,7 @@ export default function Swap({ history }: RouteComponentProps) {
             {isExpertMode && swapErrorMessage ? <SwapCallbackError error={swapErrorMessage} /> : null}
           </Box>
         </Wrapper>
-      </AppBody>
+      </StyledAppBody>
       {!swapIsUnsupported ? (
         <AdvancedSwapDetailsDropdown trade={trade} />
       ) : (

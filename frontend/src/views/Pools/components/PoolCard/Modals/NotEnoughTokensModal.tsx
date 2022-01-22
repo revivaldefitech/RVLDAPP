@@ -26,8 +26,8 @@ const NotEnoughTokensModal: React.FC<NotEnoughTokensModalProps> = ({ tokenSymbol
       <Text color="failure" bold>
         {t('Insufficient %symbol% balance', { symbol: tokenSymbol })}
       </Text>
-      <Text mt="24px">{t('You’ll need %symbol% to stake in this pool!', { symbol: tokenSymbol })}</Text>
-      <Text>
+      <Text mt="24px" color="textSubtle">{t('You’ll need %symbol% to stake in this pool!', { symbol: tokenSymbol })}</Text>
+      <Text color="textSubtle">
         {t('Buy some %symbol%, or make sure your %symbol% isn’t in another pool or LP.', {
           symbol: tokenSymbol,
         })}
@@ -36,12 +36,12 @@ const NotEnoughTokensModal: React.FC<NotEnoughTokensModalProps> = ({ tokenSymbol
         {t('Buy')} {tokenSymbol}
       </Button>
       <StyledLink href="https://yieldwatch.net" external>
-        <Button variant="secondary" mt="8px" width="100%">
+        <Button mt="8px" width="100%">
           {t('Locate Assets')}
-          <OpenNewIcon color="primary" ml="4px" />
+          <OpenNewIcon color="text" ml="4px" />
         </Button>
       </StyledLink>
-      <Button variant="text" onClick={onDismiss}>
+      <Button variant="text" style={{color:'#eee'}} onClick={onDismiss}>
         {t('Close Window')}
       </Button>
     </Modal>

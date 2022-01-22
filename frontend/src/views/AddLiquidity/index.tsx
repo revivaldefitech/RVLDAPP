@@ -321,11 +321,11 @@ export default function AddLiquidity({
               <ColumnCenter>
                 <Message variant="warning">
                   <div>
-                    <Text bold mb="8px">
+                    <Text bold mb="8px" color="textSubtle">
                       {t('You are the first liquidity provider.')}
                     </Text>
-                    <Text mb="8px">{t('The ratio of tokens you add will set the price of this pool.')}</Text>
-                    <Text>{t('Once you are happy with the rate click supply to review.')}</Text>
+                    <Text mb="8px" color="textSubtle">{t('The ratio of tokens you add will set the price of this pool.')}</Text>
+                    <Text color="textSubtle">{t('Once you are happy with the rate click supply to review.')}</Text>
                   </div>
                 </Message>
               </ColumnCenter>
@@ -361,7 +361,7 @@ export default function AddLiquidity({
               <>
                 <LightCard padding="0px" borderRadius="20px">
                   <RowBetween padding="1rem">
-                    <Text fontSize="14px">
+                    <Text fontSize="14px" color="textSubtle">
                       {noLiquidity ? t('Initial prices and pool share') : t('Prices and pool share')}
                     </Text>
                   </RowBetween>{' '}

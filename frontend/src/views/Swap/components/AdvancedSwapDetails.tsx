@@ -28,7 +28,7 @@ function TradeSummary({ trade, allowedSlippage }: { trade: Trade; allowedSlippag
           />
         </RowFixed>
         <RowFixed>
-          <Text fontSize="14px">
+          <Text fontSize="14px" color="textSubtle">
             {isExactIn
               ? `${slippageAdjustedAmounts[Field.OUTPUT]?.toSignificant(4)} ${trade.outputAmount.currency.symbol}` ??
                 '-'
@@ -66,7 +66,7 @@ function TradeSummary({ trade, allowedSlippage }: { trade: Trade; allowedSlippag
             ml="4px"
           />
         </RowFixed>
-        <Text fontSize="14px">
+        <Text fontSize="14px" color="textSubtle">
           {realizedLPFee ? `${realizedLPFee.toSignificant(4)} ${trade.inputAmount.currency.symbol}` : '-'}
         </Text>
       </RowBetween>

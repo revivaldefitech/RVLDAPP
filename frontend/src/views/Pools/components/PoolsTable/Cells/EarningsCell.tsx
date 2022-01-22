@@ -60,7 +60,7 @@ const EarningsCell: React.FC<EarningsCellProps> = ({ pool, account, userDataLoad
   return (
     <StyledCell role="cell">
       <CellContent>
-        <Text fontSize="12px" color="textSubtle" textAlign="left">
+        <Text fontSize="12px" color="text" textAlign="left">
           {labelText}
         </Text>
         {!userDataLoaded && account ? (
@@ -73,7 +73,7 @@ const EarningsCell: React.FC<EarningsCellProps> = ({ pool, account, userDataLoad
                   mt="4px"
                   bold={!isMobile}
                   fontSize={isMobile ? '14px' : '16px'}
-                  color={hasEarnings ? 'primary' : 'text'}
+                  color='text'
                   decimals={hasEarnings ? 5 : 1}
                   value={hasEarnings ? earningTokenBalance : 0}
                 />
@@ -83,7 +83,7 @@ const EarningsCell: React.FC<EarningsCellProps> = ({ pool, account, userDataLoad
                       <Balance
                         display="inline"
                         fontSize="12px"
-                        color="textSubtle"
+                        color="text"
                         decimals={2}
                         prefix="~"
                         value={earningTokenDollarBalance}

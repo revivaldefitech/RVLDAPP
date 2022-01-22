@@ -51,7 +51,7 @@ const DualTag: React.FC<TagProps> = (props) => {
 const ManualPoolTag: React.FC<TagProps> = (props) => {
   const { t } = useTranslation()
   return (
-    <Tag variant="secondary" outline startIcon={<RefreshIcon width="18px" color="secondary" mr="4px" />} {...props}>
+    <Tag variant="textSubtle" outline startIcon={<RefreshIcon width="18px" color="text" mr="4px" />} {...props}>
       {t('Manual')}
     </Tag>
   )

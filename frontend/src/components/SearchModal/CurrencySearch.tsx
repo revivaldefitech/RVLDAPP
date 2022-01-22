@@ -20,7 +20,7 @@ import ImportRow from './ImportRow'
 
 const StyledInput = styled(Input)`
   &::placeholder {
-    color: #3952a8;
+    color: #0D0D2B;
   }
 `
 

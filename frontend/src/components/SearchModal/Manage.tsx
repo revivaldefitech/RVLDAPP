@@ -10,6 +10,7 @@ import { CurrencyModalView } from './types'
 
 const StyledButtonMenu = styled(ButtonMenu)`
   width: 100%;
+  background: #0d0d2b;
 `
 
 export default function Manage({

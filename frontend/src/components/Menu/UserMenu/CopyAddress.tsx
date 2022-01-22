@@ -22,7 +22,7 @@ const Address = styled.div`
   & > input {
     background: transparent;
     border: 0;
-    color: ${({ theme }) => theme.colors.text};
+    color: ${({ theme }) => theme.colors.textSubtle};
     display: block;
     font-weight: 600;
     font-size: 16px;

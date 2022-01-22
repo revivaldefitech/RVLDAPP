@@ -75,7 +75,7 @@ const SettingsModal: React.FC<InjectedModalProps> = ({ onDismiss }) => {
         </Flex>
         <Flex justifyContent="space-between" alignItems="center" mb="24px">
           <Flex alignItems="center">
-            <Text>{t('Expert Mode')}</Text>
+            <Text color="textSubtle">{t('Expert Mode')}</Text>
             <QuestionHelper
               text={t('Bypasses confirmation modals and allows high slippage trades. Use at your own risk.')}
               placement="top-start"
@@ -86,7 +86,7 @@ const SettingsModal: React.FC<InjectedModalProps> = ({ onDismiss }) => {
         </Flex>
         <Flex justifyContent="space-between" alignItems="center" mb="24px">
           <Flex alignItems="center">
-            <Text>{t('Disable Multihops')}</Text>
+            <Text color="textSubtle">{t('Disable Multihops')}</Text>
             <QuestionHelper text={t('Restricts swaps to direct pairs only.')} placement="top-start" ml="4px" />
           </Flex>
           <Toggle
@@ -100,7 +100,7 @@ const SettingsModal: React.FC<InjectedModalProps> = ({ onDismiss }) => {
         </Flex>
         <Flex justifyContent="space-between" alignItems="center">
           <Flex alignItems="center">
-            <Text>{t('Flippy sounds')}</Text>
+            <Text color="textSubtle">{t('Flippy sounds')}</Text>
             <QuestionHelper
               text={t('Fun sounds to make a truly immersive pancake-flipping trading experience')}
               placement="top-start"

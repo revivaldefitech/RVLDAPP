@@ -26,7 +26,7 @@ const StyledUserMenu = styled(Flex)`
 `;
 
 const LabelText = styled.div`
-  color: ${({ theme }) => theme.colors.primary};
+  color: ${({ theme }) => theme.colors.text};
   display: none;
   font-weight: 600;
 
@@ -160,7 +160,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
       <StyledUserMenu ref={setTargetRef} {...props}>
         <MenuIcon avatarSrc={avatarSrc} variant={variant} />
         <LabelText title={text || account}>{text || accountEllipsis}</LabelText>
-        <ChevronDownIcon color="primary" width="24px" />
+        <ChevronDownIcon color="text" width="24px" />
       </StyledUserMenu>
       <Menu style={styles.popper} ref={setTooltipRef} {...attributes.popper} isOpen={isOpen}>
         {children}
