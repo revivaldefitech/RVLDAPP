@@ -4707,7 +4707,7 @@ var WalletCard = function (_a) {
             onDismiss();
         }, id: "wallet-connect-" + title.toLocaleLowerCase() },
         React.createElement(Icon, { width: "40px", mb: "8px" }),
-        React.createElement(Text, { fontSize: "14px" }, title)));
+        React.createElement(Text, { fontSize: "14px", color: "textSubtle" }, title)));
 };
 var templateObject_1$3;
 
