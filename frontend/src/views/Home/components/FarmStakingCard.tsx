@@ -113,28 +113,7 @@ const FarmedStakingCard = () => {
           <CakeWalletBalance xhashBalance={xhashUserBalance} />
           <Label>~${(xhashPrice * xhashUserBalance).toFixed(2)}</Label>
         </Block>
-        <Actions>
-          {account ? (
-          <Flex >
-            <Button
-              mr="8px"
-              id="harvest-all"
-              disabled={numFarmsToCollect <= 0 || pendingTx}
-              onClick={harvestAllFarms}
-            >
-              {pendingTx ? t('Collecting VIV') : t(`Harvest all %farm%`, { farm : numFarmsToCollect })}
-            </Button>
-            <Button 
-            style={{color:"#0D0D2B", background:"white"}}
-            target="_blank"
-            as='a' href="/swap">
-              {t('Buy VIV token')}
-              </Button>
-            </Flex>
-          ) : (
-            <UnlockButton />
-          )}
-        </Actions>
+
       </CardBody>
     </StyledFarmStakingCard>
   )
