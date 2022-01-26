@@ -1245,13 +1245,13 @@ var Alert = function (_a) {
     var Icon = getIcon(variant);
     return (React.createElement(StyledAlert, null,
         React.createElement(IconLabel, { variant: variant, hasDescription: !!children },
-            React.createElement(Icon, { color: "currentColor", width: "24px" })),
+            React.createElement(Icon, { color: "textSubtle", width: "24px" })),
         React.createElement(Details, { hasHandler: !!onClick },
             React.createElement(Text, { bold: true, color: "textSubtle" }, title),
             typeof children === "string" ? React.createElement(Text, { as: "p", color: "textSubtle" }, children) : children),
         onClick && (React.createElement(CloseHandler, null,
             React.createElement(IconButton, { scale: "sm", variant: "text", onClick: onClick },
-                React.createElement(Icon$1w, { width: "24px", color: "currentColor" }))))));
+                React.createElement(Icon$1w, { width: "24px", color: "textSubtle" }))))));
 };
 var templateObject_1$13, templateObject_2$u, templateObject_3$e, templateObject_4$9;
 

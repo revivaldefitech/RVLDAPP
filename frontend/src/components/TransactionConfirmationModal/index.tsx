@@ -37,13 +37,13 @@ function ConfirmationPendingContent({ pendingText }: { pendingText: string }) {
   const { t } = useTranslation()
   return (
     <Wrapper>
-      <ConfirmedIcon>
+      <ConfirmedIcon color="textSubtle">
         <Spinner />
       </ConfirmedIcon>
       <AutoColumn gap="12px" justify="center">
-        <Text fontSize="20px">{t('Waiting For Confirmation')}</Text>
+        <Text fontSize="20px" color="textSubtle">{t('Waiting For Confirmation')}</Text>
         <AutoColumn gap="12px" justify="center">
-          <Text bold small textAlign="center">
+          <Text bold small textAlign="center" color="textSubtle">
             {pendingText}
           </Text>
         </AutoColumn>
@@ -79,14 +79,15 @@ function TransactionSubmittedContent({
           <ArrowUpIcon strokeWidth={0.5} width="90px" color="primary" />
         </ConfirmedIcon>
         <AutoColumn gap="12px" justify="center">
-          <Text fontSize="20px">{t('Transaction Submitted')}</Text>
+          <Text fontSize="20px" color="textSubtle">{t('Transaction Submitted')}</Text>
           {chainId && hash && (
-            <Link external small href={getBscScanLink(hash, 'transaction', chainId)}>
+            <Link color="textSubtle" external small href={getBscScanLink(hash, 'transaction', chainId)}>
               {t('View on BscScan')}
             </Link>
           )}
           {currencyToAdd && library?.provider?.isMetaMask && (
             <Button
+              style={{color:'#fff'}}
               variant="tertiary"
               mt="12px"
               width="fit-content"

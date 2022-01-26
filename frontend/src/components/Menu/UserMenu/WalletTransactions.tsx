@@ -29,7 +29,7 @@ const WalletTransactions: React.FC = () => {
           {t('Recent Transactions')}
         </Text>
         {sortedTransactions.length > 0 && (
-          <Button scale="sm" onClick={handleClearAll} variant="text" px="0">
+          <Button scale="sm" onClick={handleClearAll} style={{color:'#fff'}} variant="text" px="0">
             {t('Clear all')}
           </Button>
         )}

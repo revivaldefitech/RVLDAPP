@@ -13,11 +13,11 @@ export default memo(function SwapRoute({ trade }: { trade: Trade }) {
           // eslint-disable-next-line react/no-array-index-key
           <Fragment key={i}>
             <Flex alignItems="end">
-              <Text fontSize="14px" ml="0.125rem" mr="0.125rem">
+              <Text fontSize="14px" ml="0.125rem" mr="0.125rem" color="textSubtle">
                 {currency.symbol}
               </Text>
             </Flex>
-            {!isLastItem && <ChevronRightIcon width="12px" />}
+            {!isLastItem && <ChevronRightIcon width="12px" color="textSubtle"/>}
           </Fragment>
         )
       })}

@@ -33,16 +33,16 @@ export default function SwapModalHeader({
     <AutoColumn gap="md">
       <RowBetween align="flex-end">
         <RowFixed gap="0px">
-          <CurrencyLogo currency={trade.inputAmount.currency} size="24px" style={{ marginRight: '12px' }} />
+          <CurrencyLogo currency={trade.inputAmount.currency} size="24px" style={{ marginRight: '12px', fill:'#fff' }}/>
           <TruncatedText
             fontSize="24px"
-            color={showAcceptChanges && trade.tradeType === TradeType.EXACT_OUTPUT ? 'primary' : 'text'}
+            color={showAcceptChanges && trade.tradeType === TradeType.EXACT_OUTPUT ? 'primary' : 'textSubtle'}
           >
             {trade.inputAmount.toSignificant(6)}
           </TruncatedText>
         </RowFixed>
         <RowFixed gap="0px">
-          <Text fontSize="24px" ml="10px">
+          <Text fontSize="24px" ml="10px" color="textSubtle">
             {trade.inputAmount.currency.symbol}
           </Text>
         </RowFixed>
@@ -52,7 +52,7 @@ export default function SwapModalHeader({
       </RowFixed>
       <RowBetween align="flex-end">
         <RowFixed gap="0px">
-          <CurrencyLogo currency={trade.outputAmount.currency} size="24px" style={{ marginRight: '12px' }} />
+          <CurrencyLogo currency={trade.outputAmount.currency} size="24px" style={{ marginRight: '12px', fill:'#fff' }} />
           <TruncatedText
             fontSize="24px"
             color={
@@ -60,14 +60,14 @@ export default function SwapModalHeader({
                 ? 'failure'
                 : showAcceptChanges && trade.tradeType === TradeType.EXACT_INPUT
                 ? 'primary'
-                : 'text'
+                : 'textSubtle'
             }
           >
             {trade.outputAmount.toSignificant(6)}
           </TruncatedText>
         </RowFixed>
         <RowFixed gap="0px">
-          <Text fontSize="24px" ml="10px">
+          <Text color="textSubtle" fontSize="24px" ml="10px">
             {trade.outputAmount.currency.symbol}
           </Text>
         </RowFixed>

@@ -29,7 +29,7 @@ function ImportToken({ tokens, handleCurrencySelect }: ImportProps) {
   return (
     <AutoColumn gap="lg">
       <Message variant="warning">
-        <Text>
+        <Text color="textSubtle">
           {t(
             'Anyone can create a BEP20 token on BSC with any name, including creating fake versions of existing tokens and tokens that claim to represent projects that do not have a token.',
           )}
@@ -61,13 +61,13 @@ function ImportToken({ tokens, handleCurrencySelect }: ImportProps) {
               </Tag>
             )}
             <Flex alignItems="center">
-              <Text mr="8px">{token.name}</Text>
-              <Text>({token.symbol})</Text>
+              <Text mr="8px" color="textSubtle">{token.name}</Text>
+              <Text color="textSubtle">({token.symbol})</Text>
             </Flex>
             {chainId && (
               <Flex justifyContent="space-between" width="100%">
-                <Text mr="4px">{address}</Text>
-                <Link href={getBscScanLink(token.address, 'address', chainId)} external>
+                <Text mr="4px" color="textSubtle">{address}</Text>
+                <Link color="textSubtle" href={getBscScanLink(token.address, 'address', chainId)} external>
                   ({t('View on BscScan')})
                 </Link>
               </Flex>
@@ -85,7 +85,7 @@ function ImportToken({ tokens, handleCurrencySelect }: ImportProps) {
             checked={confirmed}
             onChange={() => setConfirmed(!confirmed)}
           />
-          <Text ml="8px" style={{ userSelect: 'none' }}>
+          <Text ml="8px" color="textSubtle" style={{ userSelect: 'none' }}>
             {t('I understand')}
           </Text>
         </Flex>

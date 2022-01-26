@@ -72,9 +72,9 @@ export default function Updater(): null {
               toast(
                 'Transaction receipt',
                 <Flex flexDirection="column">
-                  <Text>{transactions[hash]?.summary ?? `Hash: ${hash.slice(0, 8)}...${hash.slice(58, 65)}`}</Text>
+                  <Text color="textSubtle">{transactions[hash]?.summary ?? `Hash: ${hash.slice(0, 8)}...${hash.slice(58, 65)}`}</Text>
                   {chainId && (
-                    <Link external href={getBscScanLink(hash, 'transaction', chainId)}>
+                    <Link color="textSubtle" external href={getBscScanLink(hash, 'transaction', chainId)}>
                       View on BscScan
                     </Link>
                   )}

@@ -66,11 +66,11 @@ export default function ImportRow({
 
   return (
     <TokenSection style={style}>
-      <CurrencyLogo currency={token} size="24px" style={{ opacity: dim ? '0.6' : '1' }} />
+      <CurrencyLogo currency={token} size="24px" style={{ opacity: dim ? '0.6' : '1', fill: '#fff' }} />
       <AutoColumn gap="4px" style={{ opacity: dim ? '0.6' : '1' }}>
         <AutoRow>
-          <Text>{token.symbol}</Text>
-          <Text color="textDisabled" ml="8px">
+          <Text color="textSubtle">{token.symbol}</Text>
+          <Text color="textSubtle" ml="8px">
             <NameOverflow title={token.name}>{token.name}</NameOverflow>
           </Text>
         </AutoRow>
