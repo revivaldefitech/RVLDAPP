@@ -43,6 +43,14 @@
       "logoURI": "https://rvl.finance/images/tokens/0x254246331cacbC0b2ea12bEF6632E4C6075f60e2.png"
     },
     {
+      "name": "AU",
+      "symbol": "AU",
+      "address": "0x8Ea2f890CB86DFb0E376137451c6fD982AFefc15",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://rvl.finance/images/tokens/0x8Ea2f890CB86DFb0E376137451c6fD982AFefc15.png"
+    },
+    {
       "name": "BUSD Token",
       "symbol": "BUSD",
       "address": "0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56",
