@@ -51,6 +51,23 @@ export const xUSD: { [chainId: number]: Token } = {
   ),
 }
 
+export const AU: { [chainId: number]: Token } = {
+  [ChainId.MAINNET]: new Token(
+    ChainId.MAINNET,
+    '0x8Ea2f890CB86DFb0E376137451c6fD982AFefc15',
+    18,
+    'AU',
+    'AU',
+  ),
+  [ChainId.TESTNET]: new Token(
+    ChainId.TESTNET,
+    '0x8Ea2f890CB86DFb0E376137451c6fD982AFefc15',
+    18,
+    'AU',
+    'aAU',
+  ),
+}
+
 export const BUSD: { [chainId: number]: Token } = {
   [ChainId.MAINNET]: new Token(
     ChainId.MAINNET,
@@ -134,6 +151,15 @@ const tokens = {
     },
     decimals: 9,
     projectLink: 'https://revivaldefi.com/'
+  },
+  AU: {
+    symbol: 'AU',
+    address: {
+      56: '0x8Ea2f890CB86DFb0E376137451c6fD982AFefc15',
+      97: '',
+    },
+    decimals: 9,
+    projectLink: 'https://autocrypto.ai/'
   },
   yae: {
     symbol: 'YAE',
