@@ -64,7 +64,7 @@ export const AU: { [chainId: number]: Token } = {
     '0x8Ea2f890CB86DFb0E376137451c6fD982AFefc15',
     18,
     'AU',
-    'aAU',
+    'AU',
   ),
 }
 
