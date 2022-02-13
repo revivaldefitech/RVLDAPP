@@ -70,7 +70,7 @@ const pools: PoolConfig[] = [
   {
     sousId: 405,
     stakingToken: tokens.rvl,
-    earningToken: tokens.AU,
+    earningToken: tokens.au,
     contractAddress: {
       97: '',
       56: '0xDd1478eAdb3Ac1b6537Ff71d9C307F63bbfF8242',
@@ -83,7 +83,7 @@ const pools: PoolConfig[] = [
    {
     sousId: 406,
     stakingToken: tokens.viv,
-    earningToken: tokens.AU,
+    earningToken: tokens.au,
     contractAddress: {
       97: '',
       56: '0x293072d4aE1421D7F41B72f72E3fea0971cC60A6',
@@ -91,6 +91,58 @@ const pools: PoolConfig[] = [
     poolCategory: PoolCategory.CORE,
     harvest: true,
     tokenPerBlock: '940000000000000',
+    sortOrder: 999,
+  },
+  {
+    sousId: 407,
+    stakingToken: tokens.rvl,
+    earningToken: tokens.rvl,
+    contractAddress: {
+      97: '',
+      56: '0x24A2a61325B788Be88F13e336C010B7567fAEb44',
+    },
+    poolCategory: PoolCategory.CORE,
+    harvest: true,
+    tokenPerBlock: '0.001728',
+    sortOrder: 999,
+  },
+  {
+    sousId: 408,
+    stakingToken: tokens.viv,
+    earningToken: tokens.au,
+    contractAddress: {
+      97: '',
+      56: '0xDfBdb32879095E0D565E985fc2b57365318798b3',
+    },
+    poolCategory: PoolCategory.CORE,
+    harvest: true,
+    tokenPerBlock: '0.009645',
+    sortOrder: 999,
+  },
+  {
+    sousId: 409,
+    stakingToken: tokens.rvl,
+    earningToken: tokens.au,
+    contractAddress: {
+      97: '',
+      56: '0x953Eb78D621a271161834d1Dc763C1C9c689e294',
+    },
+    poolCategory: PoolCategory.CORE,
+    harvest: true,
+    tokenPerBlock: '0.009645',
+    sortOrder: 999,
+  },
+  {
+    sousId: 410,
+    stakingToken: tokens.viv,
+    earningToken: tokens.viv,
+    contractAddress: {
+      97: '',
+      56: '0xa3593Aaf527dcF0Afb18F39125149d12be4446b9',
+    },
+    poolCategory: PoolCategory.CORE,
+    harvest: true,
+    tokenPerBlock: '0.1875',
     sortOrder: 999,
   },
 ]

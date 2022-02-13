@@ -52,12 +52,12 @@ const Container = styled.div<{ expanded }>`
           ${collapseAnimation} 300ms linear forwards
         `};
   overflow: hidden;
-  background: ${({ theme }) => theme.colors.background};
+  background: ${({ theme }) => theme.colors.cardBorder};
   display: flex;
   width: 100%;
   flex-direction: column-reverse;
   padding: 24px;
-
+  border-bottom: 2px solid ${({ theme }) => theme.colors.disabled};
   ${({ theme }) => theme.mediaQueries.lg} {
     flex-direction: row;
     padding: 16px 32px;

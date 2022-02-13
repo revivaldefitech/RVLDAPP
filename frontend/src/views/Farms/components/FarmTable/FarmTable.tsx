@@ -15,7 +15,7 @@ export interface ITableProps {
 const Container = styled.div`
   filter: ${({ theme }) => theme.card.dropShadow};
   width: 100%;
-  background: ${({ theme }) => theme.card.background};
+  background: ${({ theme }) => theme.colors.cardBorder};
   border-radius: 16px;
   margin: 16px 0px;
 `
@@ -83,7 +83,7 @@ const FarmTable: React.FC<ITableProps> = (props) => {
           </StyledTable>
         </TableWrapper>
         <ScrollButtonContainer>
-          <Button variant="text" style={{color:'#FFF'}}onClick={scrollToTop}>
+          <Button variant="text" onClick={scrollToTop}>
             {t('To Top')}
             <ChevronUpIcon color="text" />
           </Button>

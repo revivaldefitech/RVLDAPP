@@ -21,18 +21,18 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
       },
     ],
   },
-  // {
-  //  label: t('Farms'),
-  //  icon: 'FarmIcon',
-  //  href: '/farms',
-  // },
+  {
+   label: t('Farms'),
+   icon: 'FarmIcon',
+   href: '/farms',
+  },
   {
     label: t('Pools'),
     icon: 'PoolIcon',
     items: [
       {
         label: ' Pools',
-        href: '/Pools',
+        href: '/pools',
       },
       {
         label: ' Pools Calculator',

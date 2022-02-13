@@ -152,7 +152,7 @@ const tokens = {
     decimals: 9,
     projectLink: 'https://revivaldefi.com/'
   },
-  AU: {
+  au: {
     symbol: 'AU',
     address: {
       56: '0x8Ea2f890CB86DFb0E376137451c6fD982AFefc15',

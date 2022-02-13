@@ -19,6 +19,7 @@ const AnnualRoiDisplay = styled(Text)`
   overflow: hidden;
   text-align: right;
   text-overflow: ellipsis;
+  color: #fff;
 `
 
 interface DepositModalProps {
@@ -137,7 +138,7 @@ const DepositModal: React.FC<DepositModalProps> = ({
         </AnnualRoiContainer>
       </Flex>
       <ModalActions>
-        <Button variant="secondary" onClick={onDismiss} width="100%" disabled={pendingTx}>
+        <Button variant="secondary" style={{color:'#fff'}} onClick={onDismiss} width="100%" disabled={pendingTx}>
           {t('Cancel')}
         </Button>
         <Button
@@ -166,7 +167,7 @@ const DepositModal: React.FC<DepositModalProps> = ({
           {pendingTx ? t('Confirming') : t('Confirm')}
         </Button>
       </ModalActions>
-      <LinkExternal href={addLiquidityUrl} style={{ alignSelf: 'center' }}>
+      <LinkExternal href={addLiquidityUrl} style={{ alignSelf: 'center', color:"#fff" }}>
         {t('Get %symbol%', { symbol: tokenName })}
       </LinkExternal>
     </Modal>

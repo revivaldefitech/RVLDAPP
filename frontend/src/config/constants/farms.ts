@@ -2,17 +2,17 @@ import tokens from './tokens'
 import { FarmConfig } from './types'
 
 const farms: FarmConfig[] = [
-  // {
-  //   pid: 0,
-  //   lpSymbol: 'VIV',
-  //   isTokenOnly: true,
-  //   lpAddresses: {
-  //     97: '',
-  //     56: '0x946BA928443C9b672089576E0E2FF4FaCC33852A', /* 0x4666E77FA1A7F6749E48B533EF500587B094F61c */
-  //   },
-  //   token: tokens.viv,
-  //   quoteToken: tokens.busd,
-  // },
+  {
+    pid: 0,
+    lpSymbol: 'VIV',
+    isTokenOnly: true,
+    lpAddresses: {
+      97: '',
+      56: '0x946BA928443C9b672089576E0E2FF4FaCC33852A', /* 0x4666E77FA1A7F6749E48B533EF500587B094F61c */
+    },
+    token: tokens.viv,
+    quoteToken: tokens.busd,
+  },
   {
     pid: 1,
     lpSymbol: 'VIV-BUSD LP',

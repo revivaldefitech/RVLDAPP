@@ -185,7 +185,7 @@ const Staked: React.FunctionComponent<StackedActionProps> = ({
     return (
       <ActionContainer>
         <ActionTitles>
-          <Text bold textTransform="uppercase" color="textSubtle" fontSize="12px" pr="4px">
+          <Text bold textTransform="uppercase" color="text" fontSize="12px" pr="4px">
             {t('Stake').toUpperCase()}
           </Text>
           <Text bold textTransform="uppercase" color="secondary" fontSize="12px">
@@ -196,7 +196,7 @@ const Staked: React.FunctionComponent<StackedActionProps> = ({
           <Button
             width="100%"
             onClick={onPresentDeposit}
-            variant="secondary"
+            variant="subtle"
             disabled={['history', 'archived'].some((item) => location.pathname.includes(item))}
           >
             {isTokenOnly ? t('Stake') : t('Stake LP')}
@@ -224,12 +224,12 @@ const Staked: React.FunctionComponent<StackedActionProps> = ({
   return (
     <ActionContainer>
       <ActionTitles>
-        <Text bold textTransform="uppercase" color="textSubtle" fontSize="12px">
+        <Text bold textTransform="uppercase" color="text" fontSize="12px">
           {t('Enable Farm')}
         </Text>
       </ActionTitles>
       <ActionContent>
-        <Button width="100%" disabled={requestedApproval} onClick={handleApprove} variant="secondary">
+        <Button width="100%" disabled={requestedApproval} onClick={handleApprove} variant="subtle" style={{color:'#000'}}>
           {t('Enable')}
         </Button>
       </ActionContent>

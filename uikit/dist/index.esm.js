@@ -3655,7 +3655,7 @@ var Modal = function (_a) {
         React.createElement(ModalHeader, { background: getThemeValue("colors." + headerBackground, headerBackground)(theme) },
             React.createElement(ModalTitle, null,
                 onBack && React.createElement(ModalBackButton, { onBack: onBack }),
-                React.createElement(Heading, null, title)),
+                React.createElement(Heading, { style: { color: "#fff" } }, title)),
             !hideCloseButton && React.createElement(ModalCloseButton, { onDismiss: onDismiss })),
         React.createElement(ModalBody, { p: bodyPadding }, children)));
 };
