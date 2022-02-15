@@ -158,7 +158,7 @@ const tokens = {
       56: '0x8Ea2f890CB86DFb0E376137451c6fD982AFefc15',
       97: '',
     },
-    decimals: 9,
+    decimals: 18,
     projectLink: 'https://autocrypto.ai/'
   },
   yae: {
