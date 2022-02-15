@@ -24,7 +24,7 @@ const CoreTag: React.FC<TagProps> = (props) => {
 const NofeeTag: React.FC<TagProps> = (props) => {
   const { t } = useTranslation()
   return (
-    <Tag variant="textSubtle" outline startIcon={<VerifiedIcon width="18px" color="text" mr="4px" />} {...props}>
+    <Tag variant="secondary" outline startIcon={<VerifiedIcon width="18px" color="secondary" mr="4px" />} {...props}>
       {t('No Fee')}
     </Tag>
   )

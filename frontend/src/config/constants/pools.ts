@@ -70,32 +70,6 @@ const pools: PoolConfig[] = [
   {
     sousId: 405,
     stakingToken: tokens.rvl,
-    earningToken: tokens.au,
-    contractAddress: {
-      97: '',
-      56: '0xDd1478eAdb3Ac1b6537Ff71d9C307F63bbfF8242',
-    },
-    poolCategory: PoolCategory.CORE,
-    harvest: true,
-    tokenPerBlock: '940000000000000',
-    sortOrder: 999,
-  },
-   {
-    sousId: 406,
-    stakingToken: tokens.viv,
-    earningToken: tokens.au,
-    contractAddress: {
-      97: '',
-      56: '0x293072d4aE1421D7F41B72f72E3fea0971cC60A6',
-    },
-    poolCategory: PoolCategory.CORE,
-    harvest: true,
-    tokenPerBlock: '940000000000000',
-    sortOrder: 999,
-  },
-  {
-    sousId: 407,
-    stakingToken: tokens.rvl,
     earningToken: tokens.rvl,
     contractAddress: {
       97: '',
@@ -103,11 +77,11 @@ const pools: PoolConfig[] = [
     },
     poolCategory: PoolCategory.CORE,
     harvest: true,
-    tokenPerBlock: '578.7',
+    tokenPerBlock: '5787537',
     sortOrder: 999,
   },
   {
-    sousId: 408,
+    sousId: 406,
     stakingToken: tokens.viv,
     earningToken: tokens.au,
     contractAddress: {
@@ -120,7 +94,7 @@ const pools: PoolConfig[] = [
     sortOrder: 999,
   },
   {
-    sousId: 409,
+    sousId: 407,
     stakingToken: tokens.rvl,
     earningToken: tokens.au,
     contractAddress: {
