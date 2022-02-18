@@ -241,10 +241,10 @@ const Pools: React.FC = () => {
               {t('Pools')}
             </Heading>
             <Heading scale="md" color="primary">
-              {t('Just stake tokens to earn other tokens with High APR, low risk.')}
+              {t('Pools have a staking fee of 1%, which is taken from the staked tokens upon entry into the pool. Please change Gas Limit to 1350000 for staking transactions, within the transaction confirmation settings screen of your wallet.')}
             </Heading>
             {/* <Heading scale="md" color="text">
-              {t('High APR, low risk.')}
+              {t('staking fee')}
             </Heading> */}
           </Flex>
           {/* <Flex flex="1" height="fit-content" justifyContent="center" alignItems="center" mt={['24px', null, '0']}>
