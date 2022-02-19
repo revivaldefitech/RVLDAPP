@@ -29,16 +29,7 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
   {
     label: t('Pools'),
     icon: 'PoolIcon',
-    items: [
-      {
-        label: ' Pools',
-        href: '/pools',
-      },
-      {
-        label: ' Pools Calculator',
-        href: 'https://www.revivalcalc.xyz/',
-      }, 
-      ],
+    href:'/pools',
   },
   // {
   //   label: t('Referral'),
