@@ -71,7 +71,7 @@ const Home: React.FC = () => {
           <Image src='/logo.png' alt='logo' width={100} height={100} mr="10px"/>
           <Image src='/images/hero.png' alt='logo' width={100} height={100}  />
         </Flex>
-        <Heading mt="25px" size="md" color="#fff">{t('A product of VIVAL and REVIVAL')}</Heading>
+        <Heading mt="25px" size="md" color="#fff">{t('A Product of Revival DeFi Audited by CERTIK')}</Heading>
       </Hero>
       <div>
         <Cards>
