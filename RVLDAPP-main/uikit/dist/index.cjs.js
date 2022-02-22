@@ -3802,8 +3802,8 @@ var Icon$d = function (props) {
 var Logo$2 = function (_a) {
     _a.isDark; var props = __rest(_a, ["isDark"]);
     // const textColor = isDark ? "#FFFFFF" : "#000000";
-    return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 70 40", width: "100px" }, props),
-        React__default['default'].createElement("image", { width: "70", height: "40", href: '/images/logo.png' })));
+    return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 120 40" }, props),
+        React__default['default'].createElement("image", { width: "120", height: "40", href: '/images/logo.png' })));
 };
 var LogoWithText = React__default['default'].memo(Logo$2, function (prev, next) { return prev.isDark === next.isDark; });
 
