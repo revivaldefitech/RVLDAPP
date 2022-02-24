@@ -1,7 +1,7 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
 import { Link } from "react-router-dom";
-import { LogoIcon } from "../../../components/Svg";
+import { LogoIcon, Svg } from "../../../components/Svg";
 import Flex from "../../../components/Box/Flex";
 import { HamburgerIcon, HamburgerCloseIcon, LogoIcon as LogoWithText } from "../icons";
 import MenuButton from "./MenuButton";
@@ -34,6 +34,16 @@ const StyledLink = styled(Link)`
       display: block;
     }
   }
+  .mobile-certik {
+    ${({ theme }) => theme.mediaQueries.nav} {
+      display: none;
+    }
+  }  .desktop-certik {
+    display: none;
+    ${({ theme }) => theme.mediaQueries.nav} {
+      display: block;
+    }
+  }
   .right-eye {
     animation-delay: 20ms;
   }
@@ -56,6 +66,16 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
       <LogoWithText className="desktop-icon" isDark={isDark} />
     </>
   );
+  const certikImg = (
+    <>
+      <Svg viewBox="0 0 75 65" width="55px" className="mobile-certik">
+        <image width="70" height="65" href={'/images/certik_mobile.png'}/>
+      </Svg>
+      <Svg viewBox="0 0 512 65" width="300px" className="desktop-certik">
+        <image width="450" height="65" href={'/images/certik.png'}/>
+      </Svg>
+    </>
+  )
 
   return (
     <Flex>
@@ -69,10 +89,12 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
       {isAbsoluteUrl ? (
         <StyledLink as="a" href={href} aria-label="Lovepot home page">
           {innerLogo}
+          {certikImg}
         </StyledLink>
       ) : (
         <StyledLink to={href} aria-label="Lovepot home page">
           {innerLogo}
+          {certikImg}
         </StyledLink>
       )}
     </Flex>

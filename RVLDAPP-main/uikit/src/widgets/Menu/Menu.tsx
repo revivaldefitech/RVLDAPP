@@ -11,7 +11,6 @@ import Panel from "./components/Panel";
 import { NavProps } from "./types";
 import LangSelector from "./components/LangSelector";
 import { MENU_HEIGHT, SIDEBAR_WIDTH_REDUCED, SIDEBAR_WIDTH_FULL } from "./config";
-import { Svg } from "../..";
 
 const Wrapper = styled.div`
   position: relative;
@@ -124,9 +123,6 @@ const Menu: React.FC<NavProps> = ({
             isDark={isDark}
             href={homeLink?.href ?? "/"}
           />
-          <Svg viewBox="0 0 512 65" width="300px">
-            <image width="450" height="65" href={'/images/certik.png'}/>
-          </Svg>
         </Flex>
         <Flex alignItems="center">
           {/* <LangSelector currentLang={currentLang} langs={langs} setLang={setLang} /> */}
