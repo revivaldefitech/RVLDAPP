@@ -83,6 +83,16 @@ const farms: FarmConfig[] = [
     token: tokens.rvl,
     quoteToken: tokens.viv,
   },
+  {
+    pid: 8,
+    lpSymbol: 'AU-BNB LP',
+    lpAddresses: {
+      97: '',
+      56: '0xaF7e457dea8f50f004D2ed0820C20B0d5b9395CF',
+    },
+    token: tokens.au,
+    quoteToken: tokens.wbnb,
+  },
 
 ]
 
