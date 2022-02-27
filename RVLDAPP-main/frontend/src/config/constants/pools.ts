@@ -145,6 +145,19 @@ const pools: PoolConfig[] = [
     tokenPerBlock: '0.14',
     sortOrder: 999,
   },
+        {
+    sousId: 410,
+    stakingToken: tokens.viv,
+    earningToken: tokens.viv,
+    contractAddress: {
+      97: '',
+      56: '0x3934b220B7c3e39917A2C3Ad90434a0213A713A6',
+    },
+    poolCategory: PoolCategory.CORE,
+    harvest: true,
+    tokenPerBlock: '0.14',
+    sortOrder: 999,
+  },
 ]
 
 export default pools
