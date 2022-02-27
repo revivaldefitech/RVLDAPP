@@ -146,7 +146,7 @@ const pools: PoolConfig[] = [
     sortOrder: 999,
   },
         {
-    sousId: 410,
+    sousId: 411,
     stakingToken: tokens.viv,
     earningToken: tokens.viv,
     contractAddress: {
