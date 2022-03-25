@@ -184,6 +184,32 @@ const pools: PoolConfig[] = [
     tokenPerBlock: '0.14',
     sortOrder: 999,
   },
+  {
+    sousId: 414,
+    stakingToken: tokens.viv,
+    earningToken: tokens.viv,
+    contractAddress: {
+      97: '',
+      56: '0xa6c33eF8cBaF2c562e0AFf076EF9aeeD363b0297',
+    },
+    poolCategory: PoolCategory.CORE,
+    harvest: true,
+    tokenPerBlock: '0.14',
+    sortOrder: 999,
+  },
+  {
+    sousId: 415,
+    stakingToken: tokens.viv,
+    earningToken: tokens.viv,
+    contractAddress: {
+      97: '',
+      56: '0x0a8bb6d02533a27909265Af6cF8B3A879b224B93',
+    },
+    poolCategory: PoolCategory.CORE,
+    harvest: true,
+    tokenPerBlock: '0.1875',
+    sortOrder: 999,
+  },
 ]
 
 export default pools
