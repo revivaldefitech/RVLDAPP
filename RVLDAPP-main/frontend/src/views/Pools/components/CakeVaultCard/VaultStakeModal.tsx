@@ -295,11 +295,7 @@ const VaultStakeModal: React.FC<VaultStakeModalProps> = ({
       >
         {pendingTx ? t('Confirming') : t('Confirm')}
       </Button>
-      {!isRemovingStake && (
-        <Button mt="8px" as="a" external href={getTokenLink} variant="secondary">
-          {t('Get %symbol%', { symbol: stakingToken.symbol })}
-        </Button>
-      )}
+      
     </Modal>
   )
 }
