@@ -113,7 +113,12 @@ const FarmedStakingCard = () => {
           <CakeWalletBalance xhashBalance={xhashUserBalance} />
           <Label>~${(xhashPrice * xhashUserBalance).toFixed(2)}</Label>
         </Block>
-
+        <Button 
+            style={{color:"#0D0D2B", background:"white"}}
+            target="_blank"
+            as='a' href="/swap">
+              {t('Buy VIV token')}
+              </Button>
       </CardBody>
     </StyledFarmStakingCard>
   )
