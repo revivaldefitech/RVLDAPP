@@ -114,6 +114,11 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
     ],
   },
   {
+    label: t('Revival DeFi Blog'),
+    icon: 'TeamBattleIcon',
+    href: 'https://revivaldefi.medium.com/',
+  },
+  {
     label: t('More'),
     icon: 'MoreIcon',
     items: [
