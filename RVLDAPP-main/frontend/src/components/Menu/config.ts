@@ -92,6 +92,10 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
         label: 'Reddit',
         href: 'https://www.reddit.com/r/RevivalDefi',
       },
+      {
+        label: 'Medium',
+        href: 'https://revivaldefi.medium.com/',
+      },
     ],
   },
   {
@@ -116,7 +120,7 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
   {
     label: t('Revival DeFi Blog'),
     icon: 'TeamBattleIcon',
-    href: 'https://revivaldefi.medium.com/',
+    href: 'https://blog.revivaldefi.com',
   },
   {
     label: t('More'),
