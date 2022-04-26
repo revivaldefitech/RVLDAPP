@@ -43,6 +43,14 @@
       "logoURI": "https://rvl.finance/images/tokens/0x254246331cacbC0b2ea12bEF6632E4C6075f60e2.png"
     },
     {
+      "name": "Ample",
+      "symbol": "Ample",
+      "address": "0x335F6e0E804B70A96bf9eB8AF31588942e9B2515",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://rvl.finance/images/tokens/0x335F6e0E804B70A96bf9eB8AF31588942e9B2515.png"
+    },
+    {
       "name": "AU",
       "symbol": "AU",
       "address": "0x8Ea2f890CB86DFb0E376137451c6fD982AFefc15",
