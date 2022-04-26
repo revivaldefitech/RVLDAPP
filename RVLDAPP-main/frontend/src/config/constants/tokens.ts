@@ -51,6 +51,23 @@ export const xUSD: { [chainId: number]: Token } = {
   ),
 }
 
+export const Ample: { [chainId: number]: Token } = {
+  [ChainId.MAINNET]: new Token(
+    ChainId.MAINNET,
+    '0x335F6e0E804B70A96bf9eB8AF31588942e9B2515',
+    18,
+    'Ample',
+    'Ample',
+  ),
+  [ChainId.TESTNET]: new Token(
+    ChainId.TESTNET,
+    '0x335F6e0E804B70A96bf9eB8AF31588942e9B2515',
+    18,
+    'Ample',
+    'Ample',
+  ),
+}
+
 export const AU: { [chainId: number]: Token } = {
   [ChainId.MAINNET]: new Token(
     ChainId.MAINNET,
