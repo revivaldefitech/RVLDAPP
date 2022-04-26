@@ -19,10 +19,10 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
         label: t('Liquidity'),
         href: '/liquidity',
       },
-      {
-        label: t('OmniBridge'),
-        href: 'https://omni.xdaichain.com/bridge'
-      }
+  //    {
+   //     label: t('OmniBridge'),
+   //     href: 'https://omni.xdaichain.com/bridge'
+  //    }
     ],
   },
   // {
