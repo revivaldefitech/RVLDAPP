@@ -169,12 +169,12 @@ export const socials = [
   {
     label: "Discord",
     icon: "DiscordIcon",
-    href: "https://twitter.com/revivaldefi",
+    href: "https://discord.gg/revivaldefi",
   },
   {
     label: "Instagram",
     icon: "InstagramIcon",
-    href: "https://twitter.com/revivaldefi",
+    href: "https://instagram.com/revivaldefi",
   },
   {
     label: "Twitter",
@@ -184,7 +184,7 @@ export const socials = [
   {
     label: "Reddit",
     icon: "RedditIcon",
-    href: "https://twitter.com/revivaldefi",
+    href: "https://reddit.com/r/RevivalDefi",
   },
 ];
 

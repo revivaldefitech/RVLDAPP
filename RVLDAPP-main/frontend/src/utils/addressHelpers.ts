@@ -9,7 +9,7 @@ export const getAddress = (address: Address): string => {
 }
 
 export const getCakeAddress = () => {
-  return getAddress(tokens.viv.address)
+  return getAddress(tokens.rvl.address)
 }
 export const getMasterChefAddress = () => {
   return getAddress(addresses.masterChef)

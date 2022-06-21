@@ -29,7 +29,7 @@ const RvlPrice: React.FC<Props> = ({ rvlPriceUsd }) => {
       target="_blank"
     >
       <RivalRoundIcon width="24px" mr="8px" />
-      <Text color="textSubtle" bold>{`$${rvlPriceUsd.toFixed(7)}`}</Text>
+      <Text color="textSubtle" bold>{`$${rvlPriceUsd.toFixed(10)}`}</Text>
     </PriceLink>
   ) : (
     <Skeleton width={80} height={24} />

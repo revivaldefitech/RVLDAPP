@@ -64,14 +64,14 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
     label: t('Charts'),
     icon: 'InfoIcon',
     items: [
-      {
-        label: ' VIV Dextools',
-        href: 'https://www.dextools.io/app/bsc/pair-explorer/0x4666E77FA1A7F6749E48B533EF500587B094F61c',
-      },
-      {
-        label: 'VIV Poocoin',
-        href: 'https://poocoin.app/tokens/0x4666E77FA1A7F6749E48B533EF500587B094F61c',
-      },
+      // {
+      //   label: ' VIV Dextools',
+      //   href: 'https://www.dextools.io/app/bsc/pair-explorer/0x4666E77FA1A7F6749E48B533EF500587B094F61c',
+      // },
+      // {
+      //   label: 'VIV Poocoin',
+      //   href: 'https://poocoin.app/tokens/0x4666E77FA1A7F6749E48B533EF500587B094F61c',
+      // },
       {
         label: ' RVL Dextools',
         href: 'https://www.dextools.io/app/bsc/pair-explorer/0x7EaeE60040135F20f508A393ca400dEd339d654e',
@@ -116,10 +116,10 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
     label: t('Audits'),
     icon: 'NftIcon',
     items: [
-      {
-        label: 'VIV Certik',
-        href: 'https://www.certik.com/projects/vival',
-      },
+      // {
+      //   label: 'VIV Certik',
+      //   href: 'https://www.certik.com/projects/vival',
+      // },
       {
         label: 'RVL Certik',
         href: 'https://www.certik.com/projects/revival',
@@ -148,26 +148,26 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
         label: 'CoinMarketCap RVL',
         href: 'https://coinmarketcap.com/currencies/revival/',
       },
-      {
-        label: 'CoinMarketCap VIV',
-        href: 'https://coinmarketcap.com/currencies/vival/',
-      },
+      // {
+      //   label: 'CoinMarketCap VIV',
+      //   href: 'https://coinmarketcap.com/currencies/vival/',
+      // },
       {
         label: 'CoinGecko RVL',
         href: 'https://www.coingecko.com/en/coins/revival',
       },
-      {
-        label: 'CoinGecko VIV',
-        href: 'https://www.coingecko.com/en/coins/vival',
-      },
+      // {
+      //   label: 'CoinGecko VIV',
+      //   href: 'https://www.coingecko.com/en/coins/vival',
+      // },
       {
         label: 'WorldCoinIndex RVL',
         href: 'https://www.worldcoinindex.com/coin/revival',
       },
-      {
-        label: 'WorldCoinIndex VIV',
-        href: 'https://www.worldcoinindex.com/coin/vival',
-      },
+      // {
+      //   label: 'WorldCoinIndex VIV',
+      //   href: 'https://www.worldcoinindex.com/coin/vival',
+      // },
     ],
   }
 ]

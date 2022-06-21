@@ -10,7 +10,7 @@ import useToast from 'hooks/useToast'
 import { useMasterchef } from 'hooks/useContract'
 import { harvestFarm } from 'utils/calls'
 import UnlockButton from 'components/UnlockButton'
-import { usePriceCakeBusd } from 'state/farms/hooks'
+import { usePriceRvlBusd } from 'state/farms/hooks'
 import { getBalanceNumber } from 'utils/formatBalance'
 import CakeHarvestBalance from './CakeHarvestBalance'
 import CakeWalletBalance from './CakeWalletBalance'
@@ -44,8 +44,8 @@ const FarmedStakingCard = () => {
   const { account } = useWeb3React()
   const {t} = useTranslation()
   const xhashBalance = useTokenBalance(getCakeAddress())
-  const xhashUserBalance = xhashBalance.balance ? getBalanceNumber(xhashBalance.balance) : 0
-  const xhashPrice = usePriceCakeBusd().toNumber()
+  const xhashUserBalance = xhashBalance.balance ? getBalanceNumber(xhashBalance.balance, 9) : 0
+  const xhashPrice = usePriceRvlBusd().toNumber()
 
   const registerToken = async (tokenAddress: string, tokenSymbol: string, tokenDecimals: number) => {
     const tokenAdded = await window.ethereum.request({
@@ -77,7 +77,7 @@ const FarmedStakingCard = () => {
         await harvestFarm(masterChefContract, farmWithBalance.pid)
         toastSuccess(
           `${t('Harvested')}!`,
-          t('Your %symbol% earnings have been sent to your wallet!', { symbol: 'VIV' }),
+          t('Your %symbol% earnings have been sent to your wallet!', { symbol: 'RVL' }),
         )
       } catch (error) {
         toastError(t('Error'), t('Please try again. Confirm the transaction and make sure you are paying enough gas!'))
@@ -94,22 +94,22 @@ const FarmedStakingCard = () => {
           {t('Farms & Staking')}
         </Heading>
         <Flex style={{verticalAlign: 'center'}}>
-        <CardImage src="/logo.png" alt="cake logo" width={64} height={64} />
+        <CardImage src="/images/hero.png" alt="revival logo" width={64} height={64} />
           <Button 
             variant="text"
             style={{height: 32, marginTop: 20, marginLeft: 16, backgroundColor: '#d9d7f2'}}
-            onClick={() => registerToken('0x4666e77fa1a7f6749e48b533ef500587b094f61c', 'VIV', 18)}>
+            onClick={() => registerToken('0x7EaeE60040135F20f508A393ca400dEd339d654e', 'RVL', 9)}>
             +
             <img src='/images/metamask.png' alt='MetaMask Logo' style={{width: 16, height: 16, marginLeft: 4}}/>
           </Button>
         </Flex>
         <Block>
-          <Label>{t('VIV to Harvest')}</Label>
+          <Label>{t('RVL to Harvest')}</Label>
           <CakeHarvestBalance earningsSum={farmEarningsSum}/>
           <Label>~${(xhashPrice * farmEarningsSum).toFixed(2)}</Label>
         </Block>
         <Block>
-          <Label >{t('VIV in Wallet')}</Label>
+          <Label >{t('RVL in Wallet')}</Label>
           <CakeWalletBalance xhashBalance={xhashUserBalance} />
           <Label>~${(xhashPrice * xhashUserBalance).toFixed(2)}</Label>
         </Block>
@@ -117,7 +117,7 @@ const FarmedStakingCard = () => {
             style={{color:"#0D0D2B", background:"white"}}
             target="_blank"
             as='a' href="/swap">
-              {t('Buy VIV token')}
+              {t('Buy RVL token')}
               </Button>
       </CardBody>
     </StyledFarmStakingCard>
