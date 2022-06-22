@@ -34,16 +34,7 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
   {
     label: t('Pools'),
     icon: 'PoolIcon',
-    items: [
-      {
-        label: t('Pools'),
-        href: '/pools',
-      },
-      {
-        label: t('12 Month Locked VIV Pool'),
-        href: 'https://app.unicrypt.network/chain/bsc/farm/0xe9dD11F0e2BD22F7Ac9d00a365b21BAEb9F3859D',
-      },
-    ],
+    href: '/pools',
   },
   // {
   //   label: t('Referral'),
