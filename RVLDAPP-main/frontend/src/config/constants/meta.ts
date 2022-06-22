@@ -4,7 +4,7 @@ import { PageMeta } from './types'
 export const DEFAULT_META: PageMeta = {
   title: 'Revival DeFi',
   description:
-    'The most popular AMM on BSC by user count! Earn VIV through yield farming or win it in the Lottery, then stake it in Syrup Pools to earn more tokens!',
+    'The most popular AMM on BSC by user count! Earn RVL through yield farming or win it in the Lottery, then stake it in Syrup Pools to earn more tokens!',
   image: 'https://dex.rvl.finance/images/hero.png',
 }
 
