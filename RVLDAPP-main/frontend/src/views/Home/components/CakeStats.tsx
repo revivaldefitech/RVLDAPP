@@ -44,7 +44,7 @@ const CakeStats = () => {
           <CardValue fontSize="14px" value={mcap} decimals={2} prefix="$" />
         </Row>
         <Row>
-          <Text fontSize="14px">{t('Total Minted')}</Text>
+          <Text fontSize="14px">{t('Total Supply')}</Text>
           {totalSupply && <CardValue fontSize="14px" value={totalMinted} decimals={0} />}  
         </Row>
         <Row>
