@@ -133,7 +133,7 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
     items: [
       {
         label: 'Revival GitBook',
-        href: 'https://docs.revivaldefi.com',
+        href: 'https://gitbook.revivaldefi.com',
       },
       {
         label: 'CoinMarketCap RVL',
