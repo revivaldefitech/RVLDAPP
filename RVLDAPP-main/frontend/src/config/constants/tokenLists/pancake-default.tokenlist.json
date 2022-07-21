@@ -19,36 +19,12 @@
       "logoURI": "https://pancakeswap.finance/images/tokens/0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c.png"
     },
     {
-      "name": "VIVAL",
-      "symbol": "VIV",
-      "address": "0x4666E77FA1A7F6749E48B533EF500587B094F61c",
+      "name": "RevivalX",
+      "symbol": "RVLX",
+      "address": "0xafd6cf0156ef9a11fe7a6500d70c464ec5051cb5",
       "chainId": 56,
-      "decimals": 18,
-      "logoURI": "https://rvl.finance/images/tokens/0x4666E77FA1A7F6749E48B533EF500587B094F61c.png"
-    },
-    {
-      "name": "REVIVAL",
-      "symbol": "RVL",
-      "address": "0x7EaeE60040135F20f508A393ca400dEd339d654e",
-      "chainId": 56,
-      "decimals": 9,
-      "logoURI": "https://rvl.finance/images/tokens/0x7EaeE60040135F20f508A393ca400dEd339d654e.png"
-    },
-    {
-      "name": "xUSD",
-      "symbol": "xUSD",
-      "address": "0x254246331cacbC0b2ea12bEF6632E4C6075f60e2",
-      "chainId": 56,
-      "decimals": 18,
-      "logoURI": "https://rvl.finance/images/tokens/0x254246331cacbC0b2ea12bEF6632E4C6075f60e2.png"
-    },
-    {
-      "name": "Ample",
-      "symbol": "Ample",
-      "address": "0x335F6e0E804B70A96bf9eB8AF31588942e9B2515",
-      "chainId": 56,
-      "decimals": 18,
-      "logoURI": "https://rvl.finance/images/tokens/0x335F6e0E804B70A96bf9eB8AF31588942e9B2515.png"
+      "decimals": 5,
+      "logoURI": "https://rvl.finance/images/tokens/0xafd6cf0156ef9a11fe7a6500d70c464ec5051cb5.png"
     },
     {
       "name": "AU",
