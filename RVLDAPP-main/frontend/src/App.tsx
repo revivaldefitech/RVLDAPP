@@ -71,9 +71,9 @@ const App: React.FC = () => {
       <Menu>
         <SuspenseWithChunkError fallback={<PageLoader />}>
           <Switch>
-            <Route path="/" exact>
+            {/* <Route path="/" exact>
               <Home />
-            </Route>
+            </Route> */}
             {/* <Route exact path="/farms/auction">
               <FarmAuction />
             </Route> */}
@@ -106,6 +106,7 @@ const App: React.FC = () => {
             </Route> */}
 
             {/* Using this format because these components use routes injected props. We need to rework them with hooks */}
+            <Route exact strict path="/" component={Swap} />
             <Route exact strict path="/swap" component={Swap} />
             <Route exact strict path="/swap/:outputCurrency" component={RedirectToSwap} />
             <Route exact strict path="/send" component={RedirectPathToSwapOnly} />
