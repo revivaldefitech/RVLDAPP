@@ -59,7 +59,6 @@ const PanelFooter: React.FC<Props> = ({
     <Container>
       <SocialEntry>
         {/* <CakePrice cakePriceUsd={cakePriceUsd} /> */}
-        <RvlPrice rvlPriceUsd={rvlPriceUsd} />
         <SocialLinks />
       </SocialEntry>
       {/* <SettingsEntry>
