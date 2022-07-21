@@ -2,11 +2,11 @@ import { MenuEntry } from '@pancakeswap/uikit'
 import { ContextApi } from 'contexts/Localization/types'
 
 const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
-//  {
- //   label: t('Home'),
- //   icon: 'HomeIcon',
- //   href: '/',
- // },
+  {
+    label: t('Home'),
+    icon: 'HomeIcon',
+    href: '/',
+  },
   {
     label: t('Trade'),
     icon: 'TradeIcon',
@@ -25,11 +25,11 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
   //    }
     ],
   },
-   {
-    label: t('Dashboard'),
-    icon: 'InfoIcon',
-    href: 'https://dashboard.rvl.finance',
-   },
+  // {
+   // label: t('Dashboard'),
+   // icon: 'InfoIcon',
+  //  href: 'https://dashboard.rvl.finance',
+  // },
 
  // {
  //   label: t('Pools'),
