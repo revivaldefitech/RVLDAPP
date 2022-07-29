@@ -7,6 +7,11 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
     icon: 'HomeIcon',
     href: 'https://rvl.finance',
   },
+ // {
+   // label: t('Stake/Claim RVLx'),
+    //icon: 'SunIcon',
+   // href: 'https://rvl.finance',
+ // },
   {
     label: t('Trade'),
     icon: 'TradeIcon',
@@ -51,28 +56,84 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
   //   icon: 'NftIcon',
   //   href: '/staking',
   // },
+
  // {
  //   label: t('Charts'),
- //   icon: 'InfoIcon',
- //   items: [
-      // {
-      //   label: ' VIV Dextools',
-      //   href: 'https://www.dextools.io/app/bsc/pair-explorer/0x4666E77FA1A7F6749E48B533EF500587B094F61c',
-      // },
-      // {
-      //   label: 'VIV Poocoin',
-      //   href: 'https://poocoin.app/tokens/0x4666E77FA1A7F6749E48B533EF500587B094F61c',
-      // },
- //     {
- //       label: ' RVL Dextools',
- //       href: 'https://www.dextools.io/app/bsc/pair-explorer/0x7EaeE60040135F20f508A393ca400dEd339d654e',
- //     },
-//      {
-//        label: 'RVL Poocoin',
-//        href: 'https://poocoin.app/tokens/0x7EaeE60040135F20f508A393ca400dEd339d654e',
-//      },
-//    ],
+   // icon: 'InfoIcon',
+    //items: [
+     // {
+      //  label: ' RVL Dextools',
+      //  href: 'https://www.dextools.io/app/bsc/pair-explorer/0x7EaeE60040135F20f508A393ca400dEd339d654e',
+     // },
+     // {
+      //  label: 'RVL Poocoin',
+       // href: 'https://poocoin.app/tokens/0x7EaeE60040135F20f508A393ca400dEd339d654e',
+     // },
+   // ],
  // },
+  {
+    label: t('Community'),
+    icon: 'GroupsIcon',
+    items: [
+      {
+        label: 'Telegram',
+        href: 'https://www.t.me/revivaldefi',
+      },
+      {
+        label: 'Discord',
+        href: 'https://www.discord.gg/revivaldefi',
+      },
+      {
+        label: 'Instagram',
+        href: 'https://www.instagram.com/revivaldefi',
+      },
+      {
+        label: 'Twitter',
+        href: 'https://twitter.com/RevivalX',
+      },
+     // {
+     //   label: 'Reddit',
+     //   href: 'https://www.reddit.com/r/RevivalDefi',
+    //  },
+      {
+        label: 'Medium',
+        href: 'https://revivaldefi.medium.com/',
+      },
+    ],
+  },
+ // {
+ //   label: t('Audits'),
+ //   icon: 'NftIcon',
+ //   items: [
+ //     {
+ //       label: 'RVL Certik',
+ //       href: 'https://www.certik.com/projects/revival',
+  //    },
+   //   {
+  //      label: 'RVL DessertFinance',
+  //      href: 'https://dessertswap.finance/audits/Revival%20BSC%20Audit%2011371955.pdf',
+  //    },
+
+ //   ],
+  //},
+ // {
+ //   label: t('More'),
+ //   icon: 'MoreIcon',
+ //   items: [
+ //     {
+ //       label: 'Revival GitBook',
+ //       href: 'https://docs.revivaldefi.com',
+ //     },
+ //     {
+ //       label: 'CoinMarketCap RVL',
+  //      href: 'https://coinmarketcap.com/currencies/revival/',
+  //    },
+   //   {
+   //     label: 'CoinGecko RVL',
+   //     href: 'https://www.coingecko.com/en/coins/revival',
+   //   },
+  //  ],
+ // }
 
 
 
