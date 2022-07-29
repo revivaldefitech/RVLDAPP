@@ -179,7 +179,7 @@ export const socials = [
   {
     label: "Twitter",
     icon: "TwitterIcon",
-    href: "https://twitter.com/revivaldefi",
+    href: "https://twitter.com/RevivalX",
   },
   {
     label: "Reddit",
