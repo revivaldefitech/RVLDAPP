@@ -34,16 +34,7 @@ const StyledLink = styled(Link)`
       display: block;
     }
   }
-  .mobile-certik {
-    ${({ theme }) => theme.mediaQueries.nav} {
-      display: none;
-    }
-  }  .desktop-certik {
-    display: none;
-    ${({ theme }) => theme.mediaQueries.nav} {
-      display: block;
-    }
-  }
+ 
   .right-eye {
     animation-delay: 20ms;
   }
@@ -66,16 +57,7 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
       <LogoWithText className="desktop-icon" isDark={isDark} />
     </>
   );
-  const certikImg = (
-    <>
-      <Svg viewBox="0 0 75 65" width="55px" className="mobile-certik">
-        <image width="70" height="65" href={'/images/certik_mobile.png'}/>
-      </Svg>
-      <Svg viewBox="0 0 512 65" width="300px" className="desktop-certik">
-        <image width="450" height="65" href={'/images/certik.png'}/>
-      </Svg>
-    </>
-  )
+ 
 
   return (
     <Flex>
