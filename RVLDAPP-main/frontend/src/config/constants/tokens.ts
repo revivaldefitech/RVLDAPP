@@ -85,6 +85,23 @@ export const AU: { [chainId: number]: Token } = {
   ),
 }
 
+export const RVLX: { [chainId: number]: Token } = {
+  [ChainId.MAINNET]: new Token(
+    ChainId.MAINNET,
+    '0x96FD7b0a92b5F2A746f07b5e78ceda8eDc8dA3FE',
+    18,
+    'RVLX',
+    'RVLX',
+  ),
+  [ChainId.TESTNET]: new Token(
+    ChainId.TESTNET,
+    '0x96FD7b0a92b5F2A746f07b5e78ceda8eDc8dA3FE',
+    18,
+    'RVLX',
+    'RVLX',
+  ),
+}
+
 export const BUSD: { [chainId: number]: Token } = {
   [ChainId.MAINNET]: new Token(
     ChainId.MAINNET,
@@ -177,6 +194,16 @@ const tokens = {
     },
     decimals: 18,
     projectLink: 'https://autocrypto.ai/'
+  },
+
+  RVLX: {
+    symbol: 'RVLX',
+    address: {
+      56: '0x96FD7b0a92b5F2A746f07b5e78ceda8eDc8dA3FE',
+      97: '',
+    },
+    decimals: 18,
+    projectLink: 'https://revivaldefi.com'
   },
   yae: {
     symbol: 'YAE',
