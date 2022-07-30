@@ -34,7 +34,7 @@ const StyledLink = styled(Link)`
       display: block;
     }
   }
- 
+
   .right-eye {
     animation-delay: 20ms;
   }
@@ -57,7 +57,7 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
       <LogoWithText className="desktop-icon" isDark={isDark} />
     </>
   );
- 
+
 
   return (
     <Flex>
