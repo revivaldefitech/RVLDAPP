@@ -21,10 +21,10 @@
     {
       "name": "RevivalX",
       "symbol": "RVLX",
-      "address": "0xafd6cf0156ef9a11fe7a6500d70c464ec5051cb5",
+      "address": "0x96FD7b0a92b5F2A746f07b5e78ceda8eDc8dA3FE",
       "chainId": 56,
-      "decimals": 5,
-      "logoURI": "https://rvl.finance/images/tokens/0xafd6cf0156ef9a11fe7a6500d70c464ec5051cb5.png"
+      "decimals": 18,
+      "logoURI": "https://rvl.finance/images/tokens/0x96FD7b0a92b5F2A746f07b5e78ceda8eDc8dA3FE.png"
     },
     {
       "name": "AU",
