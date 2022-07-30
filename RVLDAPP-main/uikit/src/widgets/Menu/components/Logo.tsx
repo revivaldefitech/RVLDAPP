@@ -71,12 +71,10 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
       {isAbsoluteUrl ? (
         <StyledLink as="a" href={href} aria-label="Lovepot home page">
           {innerLogo}
-          {certikImg}
         </StyledLink>
       ) : (
         <StyledLink to={href} aria-label="Lovepot home page">
           {innerLogo}
-          {certikImg}
         </StyledLink>
       )}
     </Flex>
