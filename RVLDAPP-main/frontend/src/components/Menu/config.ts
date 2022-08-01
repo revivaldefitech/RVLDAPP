@@ -7,11 +7,12 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
     icon: 'HomeIcon',
     href: 'https://rvl.finance',
   },
- // {
-   // label: t('Stake/Claim RVLx'),
-    //icon: 'SunIcon',
-   // href: 'https://rvl.finance',
- // },
+
+  {
+    label: t('Stake/Claim RVLx'),
+   icon: 'SunIcon',
+    href: 'https://stake.rvl.finance',
+  },
   {
     label: t('Trade'),
     icon: 'TradeIcon',
@@ -60,7 +61,7 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
  // {
  //   label: t('Charts'),
    // icon: 'InfoIcon',
-    //items: [
+    // items: [
      // {
       //  label: ' RVL Dextools',
       //  href: 'https://www.dextools.io/app/bsc/pair-explorer/0x7EaeE60040135F20f508A393ca400dEd339d654e',
@@ -115,7 +116,7 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
   //    },
 
  //   ],
-  //},
+  // },
  // {
  //   label: t('More'),
  //   icon: 'MoreIcon',
