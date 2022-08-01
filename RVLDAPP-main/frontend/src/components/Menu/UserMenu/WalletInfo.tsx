@@ -44,10 +44,6 @@ const WalletInfo: React.FC<WalletInfoProps> = ({ hasLowBnbBalance, onDismiss }) 
         <Text color="textSubtle">{t('BNB Balance')}</Text>
         <Text color="textSubtle">{getFullDisplayBalance(balance, 18, 6)}</Text>
       </Flex>
-      <Flex alignItems="center" justifyContent="space-between" mb="24px">
-        <Text color="textSubtle">{t('VIV Balance')}</Text>
-        <Text color="textSubtle">{getFullDisplayBalance(cakeBalance, 18, 3)}</Text>
-      </Flex>
       <Flex alignItems="center" justifyContent="end" mb="24px">
         <LinkExternal style={{color:'#fff'}} href={getBscScanLink(account, 'address')}>{t('View on BscScan')}</LinkExternal>
       </Flex>
