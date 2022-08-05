@@ -58,20 +58,20 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
   //   href: '/staking',
   // },
 
- // {
- //   label: t('Charts'),
-   // icon: 'InfoIcon',
-    // items: [
-     // {
-      //  label: ' RVL Dextools',
-      //  href: 'https://www.dextools.io/app/bsc/pair-explorer/0x7EaeE60040135F20f508A393ca400dEd339d654e',
-     // },
-     // {
-      //  label: 'RVL Poocoin',
-       // href: 'https://poocoin.app/tokens/0x7EaeE60040135F20f508A393ca400dEd339d654e',
-     // },
-   // ],
- // },
+  {
+    label: t('Charts'),
+    icon: 'InfoIcon',
+     items: [
+      {
+        label: ' RVLX Bogged Finance',
+        href: 'https://charts.bogged.finance/?c=bsc&t=0x96FD7b0a92b5F2A746f07b5e78ceda8eDc8dA3FE',
+      },
+      {
+        label: 'RVLX Poocoin',
+        href: 'https://poocoin.app/tokens/0x96fd7b0a92b5f2a746f07b5e78ceda8edc8da3fe',
+      },
+    ],
+  },
   {
     label: t('Community'),
     icon: 'GroupsIcon',
