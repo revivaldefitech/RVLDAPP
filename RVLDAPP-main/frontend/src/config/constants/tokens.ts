@@ -88,14 +88,14 @@ export const AU: { [chainId: number]: Token } = {
 export const RVLX: { [chainId: number]: Token } = {
   [ChainId.MAINNET]: new Token(
     ChainId.MAINNET,
-    '0x96FD7b0a92b5F2A746f07b5e78ceda8eDc8dA3FE',
+    '0xcEb244A0E126f6CCbf37d631c7b102cf3e11a536',
     18,
     'RVLX',
     'RVLX',
   ),
   [ChainId.TESTNET]: new Token(
     ChainId.TESTNET,
-    '0x96FD7b0a92b5F2A746f07b5e78ceda8eDc8dA3FE',
+    '0xcEb244A0E126f6CCbf37d631c7b102cf3e11a536',
     18,
     'RVLX',
     'RVLX',
@@ -166,7 +166,7 @@ const tokens = {
       97: '',
     },
     decimals: 18,
-    projectLink: 'https://revivaldefi.com/'
+    projectLink: 'https://revivalx.io/'
   },
   xusd: {
     symbol: 'xUSD',
@@ -184,7 +184,7 @@ const tokens = {
       97: '',
     },
     decimals: 9,
-    projectLink: 'https://revivaldefi.com/'
+    projectLink: 'https://revivalx.io/'
   },
   au: {
     symbol: 'AU',
@@ -199,11 +199,11 @@ const tokens = {
   RVLX: {
     symbol: 'RVLX',
     address: {
-      56: '0x96FD7b0a92b5F2A746f07b5e78ceda8eDc8dA3FE',
+      56: '0xcEb244A0E126f6CCbf37d631c7b102cf3e11a536',
       97: '',
     },
     decimals: 18,
-    projectLink: 'https://revivaldefi.com'
+    projectLink: 'https://revivalx.io'
   },
   yae: {
     symbol: 'YAE',
