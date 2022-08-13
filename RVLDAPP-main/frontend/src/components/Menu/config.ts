@@ -64,11 +64,11 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
      items: [
       {
         label: ' RVLX Bogged Finance',
-        href: 'https://charts.bogged.finance/?c=bsc&t=0x96FD7b0a92b5F2A746f07b5e78ceda8eDc8dA3FE',
+        href: 'https://charts.bogged.finance/?c=bsc&t=0xcEb244A0E126f6CCbf37d631c7b102cf3e11a536',
       },
       {
         label: 'RVLX Poocoin',
-        href: 'https://poocoin.app/tokens/0x96fd7b0a92b5f2a746f07b5e78ceda8edc8da3fe',
+        href: 'https://poocoin.app/tokens/0xcEb244A0E126f6CCbf37d631c7b102cf3e11a536',
       },
     ],
   },
@@ -94,7 +94,7 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
       },
      // {
      //   label: 'Reddit',
-     //   href: 'https://www.reddit.com/r/RevivalDefi',
+     //   href: 'https://www.reddit.com/r/Revivalx',
     //  },
       {
         label: 'Medium',
