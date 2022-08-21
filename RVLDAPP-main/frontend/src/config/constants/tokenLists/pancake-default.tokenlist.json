@@ -36,7 +36,7 @@
     },
     {
       "name": "xUSD",
-      "symbol": "XUSD",
+      "symbol": "xUSD",
       "address": "0x324E8E649A6A3dF817F97CdDBED2b746b62553dD",
       "chainId": 56,
       "decimals": 18,
