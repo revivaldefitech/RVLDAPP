@@ -35,6 +35,14 @@
       "logoURI": "https://rvl.finance/images/tokens/0x8Ea2f890CB86DFb0E376137451c6fD982AFefc15.png"
     },
     {
+      "name": "xUSD",
+      "symbol": "XUSD",
+      "address": "0x324E8E649A6A3dF817F97CdDBED2b746b62553dD",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://rvl.finance/images/tokens/0x324E8E649A6A3dF817F97CdDBED2b746b62553dD.png"
+    },
+    {
       "name": "BUSD Token",
       "symbol": "BUSD",
       "address": "0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56",
