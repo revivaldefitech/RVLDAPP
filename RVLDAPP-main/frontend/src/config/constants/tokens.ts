@@ -37,14 +37,14 @@ export const VIV: { [chainId: number]: Token } = {
 export const xUSD: { [chainId: number]: Token } = {
   [ChainId.MAINNET]: new Token(
     ChainId.MAINNET,
-    '0x254246331cacbC0b2ea12bEF6632E4C6075f60e2',
+    '0x324E8E649A6A3dF817F97CdDBED2b746b62553dD',
     18,
     'xUSD',
     'xUSD',
   ),
   [ChainId.TESTNET]: new Token(
     ChainId.TESTNET,
-    '0x254246331cacbC0b2ea12bEF6632E4C6075f60e2',
+    '0x324E8E649A6A3dF817F97CdDBED2b746b62553dD',
     18,
     'xUSD',
     'xUSD',
