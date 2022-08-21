@@ -197,7 +197,7 @@ export default function AddLiquidity({
   const modalHeader = () => {
     return noLiquidity ? (
       <Flex alignItems="center">
-        <Text fontSize="48px" marginRight="10px">
+        <Text fontSize="48px" color="#ffffff" marginRight="10px">
           {`${currencies[Field.CURRENCY_A]?.symbol}/${currencies[Field.CURRENCY_B]?.symbol}`}
         </Text>
         <DoubleCurrencyLogo
@@ -209,7 +209,7 @@ export default function AddLiquidity({
     ) : (
       <AutoColumn>
         <Flex alignItems="center">
-          <Text fontSize="48px" marginRight="10px">
+          <Text fontSize="48px" color="#ffffff" marginRight="10px">
             {liquidityMinted?.toSignificant(6)}
           </Text>
           <DoubleCurrencyLogo
@@ -219,11 +219,11 @@ export default function AddLiquidity({
           />
         </Flex>
         <Row>
-          <Text fontSize="24px">
+          <Text fontSize="24px" color="#ffffff">
             {`${currencies[Field.CURRENCY_A]?.symbol}/${currencies[Field.CURRENCY_B]?.symbol} Pool Tokens`}
           </Text>
         </Row>
-        <Text small textAlign="left" my="24px">
+        <Text small textAlign="left" color="#ffffff" my="24px">
           {t('Output is estimated. If the price changes by more than %slippage%% your transaction will revert.', {
             slippage: allowedSlippage / 100,
           })}
@@ -321,7 +321,7 @@ export default function AddLiquidity({
               <ColumnCenter>
                 <Message variant="warning">
                   <div>
-                    <Text bold mb="8px" color="textSubtle">
+                    <Text bold mb="8px" color="#ffffff">
                       {t('You are the first liquidity provider.')}
                     </Text>
                     <Text mb="8px" color="textSubtle">{t('The ratio of tokens you add will set the price of this pool.')}</Text>
@@ -361,7 +361,7 @@ export default function AddLiquidity({
               <>
                 <LightCard padding="0px" borderRadius="20px">
                   <RowBetween padding="1rem">
-                    <Text fontSize="14px" color="textSubtle">
+                    <Text fontSize="14px" color="#ffffff">
                       {noLiquidity ? t('Initial prices and pool share') : t('Prices and pool share')}
                     </Text>
                   </RowBetween>{' '}
