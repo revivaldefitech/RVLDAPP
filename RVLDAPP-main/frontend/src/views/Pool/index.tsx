@@ -94,7 +94,9 @@ export default function Pool() {
                 {t("Don't see a pool you joined?")}
               </Text>
               <Button id="import-pool-link" variant="secondary" scale="sm" as={Link} to="/find">
-                {t('Find other LP tokens')}
+              <Text color="#ffffff" mb="8px">
+                {t('Find other LP tokens')}                 
+                </Text>
               </Button>
             </Flex>
           )}
