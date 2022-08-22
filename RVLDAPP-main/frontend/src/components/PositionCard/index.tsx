@@ -76,7 +76,7 @@ export function MinimalPositionCard({ pair, showUnwrapped = false }: PositionCar
             <AutoColumn gap="16px">
               <FixedHeightRow>
                 <RowFixed>
-                  <Text color="secondary" bold>
+                  <Text color="#ffffff" bold>
                     {t('LP tokens in your wallet')}
                   </Text>
                 </RowFixed>
@@ -84,7 +84,7 @@ export function MinimalPositionCard({ pair, showUnwrapped = false }: PositionCar
               <FixedHeightRow onClick={() => setShowMore(!showMore)}>
                 <RowFixed>
                   <DoubleCurrencyLogo currency0={currency0} currency1={currency1} margin size={20} />
-                  <Text small color="textSubtle">
+                  <Text small color="#ffffff">
                     {currency0.symbol}-{currency1.symbol} LP
                   </Text>
                 </RowFixed>
@@ -94,25 +94,25 @@ export function MinimalPositionCard({ pair, showUnwrapped = false }: PositionCar
               </FixedHeightRow>
               <AutoColumn gap="4px">
                 <FixedHeightRow>
-                  <Text color="textSubtle" small>
+                  <Text color="#ffffff" small>
                     {t('Share of Pool')}:
                   </Text>
                   <Text>{poolTokenPercentage ? `${poolTokenPercentage.toFixed(6)}%` : '-'}</Text>
                 </FixedHeightRow>
                 <FixedHeightRow>
-                  <Text color="textSubtle" small>
+                  <Text color="#ffffff" small>
                     {t('Pooled %asset%', { asset: currency0.symbol })}:
                   </Text>
                   {token0Deposited ? (
                     <RowFixed>
-                      <Text ml="6px">{token0Deposited?.toSignificant(6)}</Text>
+                      <Text ml="6px" color="#ffffff">{token0Deposited?.toSignificant(6)}</Text>
                     </RowFixed>
                   ) : (
                     '-'
                   )}
                 </FixedHeightRow>
                 <FixedHeightRow>
-                  <Text color="textSubtle" small>
+                  <Text color="#ffffff" small>
                     {t('Pooled %asset%', { asset: currency1.symbol })}:
                   </Text>
                   {token1Deposited ? (
@@ -175,7 +175,7 @@ export default function FullPositionCard({ pair, ...props }: PositionCardProps) 
         <Flex flexDirection="column">
           <Flex alignItems="center" mb="4px">
             <DoubleCurrencyLogo currency0={currency0} currency1={currency1} size={20} />
-            <Text bold ml="8px">
+            <Text bold ml="8px" color="#ffffff">
               {!currency0 || !currency1 ? <Dots>Loading</Dots> : `${currency0.symbol}/${currency1.symbol}`}
             </Text>
           </Flex>
